@@ -1,0 +1,11 @@
+# Old site URLs to new pages (Netlify format, permanent redirects)
+/history            /our-story/            301
+/activity           /timeline/             301
+/projects-7         /research-innovation/  301
+/about-1            /founders/             301
+/copy-of-founders   /our-team/             301
+/consultant         /consultants/          301
+/contact-5          /get-involved/         301
+/2024               /gallery/              301
+/copy-of-2024       /gallery/              301
+/copy-of-2024-1     /gallery/              301
