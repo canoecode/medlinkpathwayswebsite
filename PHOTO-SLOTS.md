@@ -1,32 +1,15 @@
 # Photo Slots
 
-Every photo on the site is a labeled placeholder slot. There are **88 slots** across 19 pages.
+The site has **145 photo slots**: **124 hold real photos** and **21 are still placeholders**.
 
-To fill a slot, save the photo as `/assets/images/<slot-id>.webp` and replace the slot's `<div class="photo-slot__box">` with an `<img>`. The steps are in README.md under "Replacing a photo slot". Search the HTML for `data-slot="<slot-id>"` to find a slot.
+Photos live in `/assets/images/` as `.webp` files. To fill or swap a slot, see README.md, "Replacing a photo slot". Search the HTML for `data-slot="<slot-id>"` to find a slot on its page.
+
+## Still empty
+
+These slots show a gray labeled placeholder until a photo is added.
 
 | Slot ID | Page URL | Ratio | Description |
 | --- | --- | --- | --- |
-| `home-hero` | `/` | 16:9 | doctors seeing patients in Mae Chaem (hero background, under the dark overlay) |
-| `home-who-we-are` | `/` | 4:3 | the team on a Mae Chaem trip |
-| `home-healthcare-1` | `/` | 4:3 | doctors with patients |
-| `home-healthcare-2` | `/` | 4:3 | a first aid class |
-| `home-community-1` | `/` | 4:3 | a class in session |
-| `home-community-2` | `/` | 4:3 | hand-sewn shirts |
-| `home-medical-1` | `/` | 4:3 | members at a hospital |
-| `home-medical-2` | `/` | 4:3 | conference registration desk |
-| `home-fundraiser` | `/` | 16:9 | a fundraiser event |
-| `home-founder-quote` | `/` | 1:1 | founder portrait (shown as a 96px circle) |
-| `our-story-hero` | `/our-story/` | 16:9 | the first Mae Chaem trip (hero background, under the dark overlay) |
-| `our-story-founder-quote` | `/our-story/` | 1:1 | founder portrait (shown as a 96px circle) |
-| `founder-01` | `/founders/` | 1:1 | founder portrait |
-| `founder-02` | `/founders/` | 1:1 | founder portrait |
-| `founder-03` | `/founders/` | 1:1 | founder portrait |
-| `team-board-01` | `/our-team/` | 1:1 | board member portrait |
-| `team-board-02` | `/our-team/` | 1:1 | board member portrait |
-| `team-board-03` | `/our-team/` | 1:1 | board member portrait |
-| `team-board-04` | `/our-team/` | 1:1 | board member portrait |
-| `team-board-05` | `/our-team/` | 1:1 | board member portrait |
-| `team-board-06` | `/our-team/` | 1:1 | board member portrait |
 | `team-member-01` | `/our-team/` | 1:1 | member portrait |
 | `team-member-02` | `/our-team/` | 1:1 | member portrait |
 | `team-member-03` | `/our-team/` | 1:1 | member portrait |
@@ -39,103 +22,194 @@ To fill a slot, save the photo as `/assets/images/<slot-id>.webp` and replace th
 | `team-member-10` | `/our-team/` | 1:1 | member portrait |
 | `team-member-11` | `/our-team/` | 1:1 | member portrait |
 | `team-member-12` | `/our-team/` | 1:1 | member portrait |
-| `consultant-01` | `/consultants/` | 1:1 | consultant portrait |
-| `consultant-02` | `/consultants/` | 1:1 | consultant portrait |
-| `consultant-03` | `/consultants/` | 1:1 | consultant portrait |
-| `healthcare-hero` | `/healthcare-access/` | 16:9 | doctors seeing patients in a Mae Chaem village (hero background, under the dark overlay) |
-| `healthcare-outreach-1` | `/healthcare-access/` | 4:3 | doctors seeing patients |
-| `healthcare-outreach-2` | `/healthcare-access/` | 4:3 | medicine being handed out |
 | `healthcare-cataract-1` | `/healthcare-access/` | 4:3 | a patient after surgery |
-| `healthcare-first-aid-1` | `/healthcare-access/` | 4:3 | students practicing bandaging |
-| `community-hero` | `/community-empowerment/` | 16:9 | a class with children in Mae Chaem (hero background, under the dark overlay) |
-| `community-learning-1` | `/community-empowerment/` | 4:3 | a member teaching a class |
-| `community-bakery-1` | `/community-empowerment/` | 4:3 | a baking class |
-| `community-products-1` | `/community-empowerment/` | 4:3 | hand-sewn shirts |
-| `community-products-2` | `/community-empowerment/` | 4:3 | the families who made them |
-| `community-essentials-1` | `/community-empowerment/` | 4:3 | supplies being handed out |
-| `medical-hero` | `/medical-exploration/` | 16:9 | members shadowing in a hospital (hero background, under the dark overlay) |
-| `medical-shadowing-1` | `/medical-exploration/` | 4:3 | members at a hospital |
-| `medical-conferences-1` | `/medical-exploration/` | 4:3 | members at the registration desk |
-| `medical-conferences-2` | `/medical-exploration/` | 4:3 | members performing on stage |
-| `research-hero` | `/research-innovation/` | 16:9 | members working on a device (hero background, under the dark overlay) |
 | `research-card-pulma` | `/research-innovation/` | 3:2 | Pulma render |
 | `research-card-telesync` | `/research-innovation/` | 3:2 | TeleSync render |
-| `research-card-rememocare` | `/research-innovation/` | 3:2 | RememoCare render |
-| `research-card-epivascan` | `/research-innovation/` | 3:2 | EpivaScan render |
 | `research-card-thermography` | `/research-innovation/` | 3:2 | Thermography Study render |
 | `pulma-render` | `/projects/pulma/` | 3:2 | Pulma render |
 | `telesync-render` | `/projects/telesync/` | 3:2 | TeleSync render |
-| `rememocare-render` | `/projects/rememocare/` | 3:2 | RememoCare render |
-| `epivascan-render` | `/projects/epivascan/` | 3:2 | EpivaScan render |
 | `thermography-method` | `/projects/thermography/` | 3:2 | illustration of the thermal camera method |
-| `impact-hero` | `/our-impact/` | 16:9 | a Mae Chaem outreach day (hero background, under the dark overlay) |
-| `impact-mamacare` | `/our-impact/` | 4:3 | MamaCare partnership |
-| `timeline-2024` | `/timeline/` | 4:3 | 2024 highlight |
-| `timeline-2025` | `/timeline/` | 4:3 | 2025 highlight |
-| `timeline-2026` | `/timeline/` | 4:3 | 2026 highlight |
 | `timeline-2027` | `/timeline/` | 4:3 | What's Next highlight |
-| `gallery-01` | `/gallery/` | 4:3 | first trip to Mae Chaem with a volunteer medical team (Healthcare Access, 2024) |
-| `gallery-02` | `/gallery/` | 4:3 | toys and card games for children in Mae Chaem (Community Empowerment, 2024) |
-| `gallery-03` | `/gallery/` | 4:3 | members shadowing at Banphaeo Hospital (Medical Exploration, 2024) |
-| `gallery-04` | `/gallery/` | 4:3 | members at Rajavithi Hospital (Medical Exploration, 2024) |
-| `gallery-05` | `/gallery/` | 4:3 | early work on the Skin and AI project (Research & Innovation, 2024) |
-| `gallery-06` | `/gallery/` | 4:3 | an early fundraiser (Fundraisers, 2024) |
-| `gallery-07` | `/gallery/` | 4:3 | the return trip to Mae Chaem (Healthcare Access, 2025) |
-| `gallery-08` | `/gallery/` | 4:3 | a Physics class in Mae Chaem (Community Empowerment, 2025) |
-| `gallery-09` | `/gallery/` | 4:3 | a bakery class (Community Empowerment, 2025) |
-| `gallery-10` | `/gallery/` | 4:3 | the ASEAN MISST registration desk (Medical Exploration, 2025) |
-| `gallery-11` | `/gallery/` | 4:3 | thermography study scans (Research & Innovation, 2025) |
-| `gallery-12` | `/gallery/` | 4:3 | a fundraiser event (Fundraisers, 2025) |
-| `gallery-13` | `/gallery/` | 4:3 | a patient in the cataract program (Healthcare Access, 2026) |
-| `gallery-14` | `/gallery/` | 4:3 | first aid training for students (Healthcare Access, 2026) |
-| `gallery-15` | `/gallery/` | 4:3 | dry food and essentials being handed out (Community Empowerment, 2026) |
-| `gallery-16` | `/gallery/` | 4:3 | members at Siriraj Hospital (Medical Exploration, 2026) |
-| `gallery-17` | `/gallery/` | 4:3 | the RememoCare team at KU MedAI (Research & Innovation, 2026) |
-| `gallery-18` | `/gallery/` | 4:3 | a fundraiser for medicine (Fundraisers, 2026) |
-| `get-involved-hero` | `/get-involved/` | 16:9 | members on an outreach trip (hero background, under the dark overlay) |
 | `donate-promptpay-qr` | `/donate/` | 1:1 | PromptPay QR code (shown at 200px wide) |
 
-## Logo placeholders
+## Filled
 
-These are not photo slots, but they also wait for real artwork. Each one is a gray card with the organization or competition name. To use a real logo, replace the `logo-tile__mark` span (or the `award-card__logo` box) with an `<img>`.
+"Original file" is the path inside the `web medlink` folder the photo came from. Every photo was cropped to the slot ratio, resized, and saved without location data.
 
-| Page URL | Placeholder | For |
+| Slot ID | Page URL | Ratio | Shows | Original file |
+| --- | --- | --- | --- | --- |
+| `home-hero` | `/` | 16:9 | Patients wait on chairs under a large blue tent on clinic day in Mae Chaem (hero background, under the dark overlay) | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย21Feb2025 ตรวจคนไข้ complete/IMG_7399.JPG |
+| `home-who-we-are` | `/` | 4:3 | The MedLink team in Mae Chaem, February 2026 | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย20Feb2026_Donate หมู่บ้าน complete/LINE_ALBUM_2022026_260223_11.jpg |
+| `home-healthcare-1` | `/` | 4:3 | A volunteer doctor sees patients while members observe. Mae Chaem, February 2025 | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/28Feb2025_ตรวจคนไข้_บ่าย/LINE_ALBUM_แม่แจ่ม Day 2_260114_101.jpg |
+| `home-healthcare-2` | `/` | 4:3 | First aid class at Saint Joseph Mae Chaem School, February 2026 | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย21Feb2025 สอน first Aid complete/F8ACDD4B-7B87-47C7-9C8D-2CE9E7CFCB97.jpg |
+| `home-community-1` | `/` | 4:3 | Teaching Physics at Saint Joseph Mae Chaem School, February 2025 | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/28Feb2025_RIS_Physic complete/LINE_ALBUM_Physics classroom_260114_8.jpg |
+| `home-community-2` | `/` | 4:3 | Hand-woven highland cloth on sale at the FunFair, February 2025 | 5.Activity กิจกรรม/2025/FunFair 22.02.2025_Final/LINE_ALBUM_ภาพชาวเขาทอผ้า_260114_6.jpg |
+| `home-medical-1` | `/` | 4:3 | Observing surgery at Rajavithi Hospital | 5.Activity กิจกรรม/2025/Shadow ราชวิถี_มค 2025_Final/IMG_9262.JPG |
+| `home-medical-2` | `/` | 4:3 | Registration desk at the 10th ASEAN MISST, February 2025 | 5.Activity กิจกรรม/2025/AseanMisst_Feb 26 2025 complete/LINE_ALBUM_26225_260114_13.jpg |
+| `home-fundraiser` | `/` | 16:9 | Selling instant noodles and Valentine's gifts at school to raise money for medicine, 2025 | 5.Activity กิจกรรม/2025/ขายมาม่า+วาเลนไทม์_รายได้ซื้อยา_มค 2025_Final/S__17285264.jpg |
+| `home-founder-quote` | `/` | 1:1 | Portrait of Kundol Tangruthaiwanich (shown as a 96px circle) | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
+| `our-story-hero` | `/our-story/` | 16:9 | A highland valley in Mae Chaem with a small pond and a line of people walking through the grass (hero background, under the dark overlay) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0192.JPG |
+| `our-story-founder-quote` | `/our-story/` | 1:1 | Portrait of Kundol Tangruthaiwanich (shown as a 96px circle) | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
+| `founder-kundol` | `/founders/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
+| `founder-nuttapat` | `/founders/` | 1:1 | Portrait of Nuttapat Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Nuttapat.jpg |
+| `founder-kemjira` | `/founders/` | 1:1 | Portrait of Kemjira Wawat | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/4 Kemjira Wawat/Kemjira Wawat.jpg |
+| `founder-khanapot` | `/founders/` | 1:1 | Portrait of Khanapot Asakit | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Khanapot.jpg |
+| `founder-patthanan` | `/founders/` | 1:1 | Portrait of Patthanan Uthaititpitak | 4.Organization/รายชื่อ/Co Founder/05 Patthanan Uthaititpitak/5 Patthanan Uthaititpitak.docx (image inside the document) |
+| `founder-natprima` | `/founders/` | 1:1 | Portrait of Natprima Sae-Heng | 4.Organization/รายชื่อ/Co Founder/06 Natprima Sae-Heng/06 Natprima Sae-Heng.jpg |
+| `founder-prach` | `/founders/` | 1:1 | Portrait of Prach Mangkhalathanakun | 4.Organization/รายชื่อ/Co Founder/07 Prach Mangkhalathanakun/07  Prach Mangkhalathanakun.jpeg |
+| `founders-group` | `/founders/` | 3:2 | MedLink co-founders at graduation, August 2026 | 1.History ประวัติ/Co-Founder Medlink .jpg |
+| `team-president` | `/our-team/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
+| `team-vice-president` | `/our-team/` | 1:1 | Portrait of Akarapat Nawatrilap (Prem) | 4.Organization/รายชื่อ/Executive team/Akarapat/Akarapat.jpg |
+| `team-nuttapat` | `/our-team/` | 1:1 | Portrait of Nuttapat Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Nuttapat.jpg |
+| `team-weeranda` | `/our-team/` | 1:1 | Portrait of Weeranda Kiatlertpongsa | 4.Organization/รายชื่อ/Executive team/01 Weeranda Kiatlertpongsa/01 Weeranda Kiatlertpongsa.jpeg |
+| `team-akira-w` | `/our-team/` | 1:1 | Portrait of Akira Wongwannaraksa | 4.Organization/รายชื่อ/Executive team/02 Akira Wongwannaraksa/02 Akira Wongwannaraksa.jpeg |
+| `team-xinyue` | `/our-team/` | 1:1 | Portrait of Xinyue Gao | 4.Organization/รายชื่อ/Executive team/03 Xinyue Gao/03 Xinyue Gao.jpeg |
+| `team-xinya` | `/our-team/` | 1:1 | Portrait of Xinya Natalie Neui | 4.Organization/รายชื่อ/Executive team/04 Xinya Natalie Neui/Xinya Natalie Neui.jpeg |
+| `team-burich` | `/our-team/` | 1:1 | Portrait of Burich Benjarattananon | 4.Organization/รายชื่อ/Executive team/05 Burich Benjarattananon/05 Burich Benjarattananon.jpg |
+| `team-panboon` | `/our-team/` | 1:1 | Portrait of Panboon Chantarasupawong | 4.Organization/รายชื่อ/Executive team/06 Panboon Chantarasupawong/06 Panboon Chantarasupawong.jpeg |
+| `team-kulisara` | `/our-team/` | 1:1 | Portrait of Kulisara (Xin) Viriyayodyiem | 4.Organization/รายชื่อ/Executive team/07 Kulisara Viriyayodyiem/07 Kulisara Viriyayodyiem.jpeg |
+| `team-pakawat` | `/our-team/` | 1:1 | Portrait of Pakawat Poldetch | 4.Organization/รายชื่อ/Executive team/08 Pakawat Poldetch/08 Pakawat Poldetch.jpg |
+| `team-sikkha` | `/our-team/` | 1:1 | Portrait of Sikkha Sinthuchat | 4.Organization/รายชื่อ/Executive team/09 Sikkha Sinthuchat/09 Sikkha Sinthuchat.jpeg |
+| `team-kamolsith` | `/our-team/` | 1:1 | Portrait of Kamolsith Qawvasut | 4.Organization/รายชื่อ/Executive team/10 Kamolsith Qawvasut/10 Kamolsith Qawvasut.jpg |
+| `team-thanus` | `/our-team/` | 1:1 | Portrait of Thanus Prayoonthong | 4.Organization/รายชื่อ/Executive team/11 Thanus Prayoonthong/11 Thanus Prayoonthong.jpeg |
+| `team-sudfah` | `/our-team/` | 1:1 | Portrait of Sudfah Rattanaveroj | 4.Organization/รายชื่อ/Executive team/12 Sudfah Rattanaveroj/12 Sudfah Rattanaveroj.jpeg |
+| `team-akara` | `/our-team/` | 1:1 | Portrait of Akara Pimmason Hoshina | 4.Organization/รายชื่อ/Executive team/13 Akara Pimmason Hoshina/13 Akara Pimmason Hoshina.jpeg |
+| `team-prytdanai` | `/our-team/` | 1:1 | Portrait of Prytdanai Pawa | 4.Organization/รายชื่อ/Executive team/14 Prytdanai Pawa/14 prytdanai pawa.jpeg |
+| `team-kunanya` | `/our-team/` | 1:1 | Portrait of Kunanya Issarapinyo | 4.Organization/รายชื่อ/Executive team/15 Kunanya Issarapinyo/15 Kunanya Issarapinyo.jpeg |
+| `team-chutikarn` | `/our-team/` | 1:1 | Portrait of Chutikarn Suesattabongkoch | 4.Organization/รายชื่อ/Executive team/16 Pakawat Poldetch/16 Chutikarn Suesattabongkoch.jpeg |
+| `team-siwat` | `/our-team/` | 1:1 | Portrait of Siwat Viriyayodyiem | 4.Organization/รายชื่อ/Executive team/17 Siwat Viriyayodyiem/17 Siwat Viriyayodyiem.jpeg |
+| `team-thitaree` | `/our-team/` | 1:1 | Portrait of Thitaree Phunratanamala | 4.Organization/รายชื่อ/Executive team/18 Thitaree Phunratanamala/18 Thitaree Phunratanamala.jpg |
+| `team-qinhui` | `/our-team/` | 1:1 | Portrait of Qinhui Li | 4.Organization/รายชื่อ/Executive team/19 Qinhui Li/19 Qinhui Li.jpeg |
+| `team-akira-s` | `/our-team/` | 1:1 | Portrait of Akira Sirimothya | 4.Organization/รายชื่อ/Executive team/20 Akira Sirimothya/20 Akira Sirimothya.jpeg |
+| `team-khanapot` | `/our-team/` | 1:1 | Portrait of Khanapot Asakit | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Khanapot.jpg |
+| `team-thitipa` | `/our-team/` | 1:1 | Portrait of Thitipa Sirikul | 4.Organization/รายชื่อ/Executive team/22 Thitipa Sirikul/22 Thitipa Sirikul.jpeg |
+| `consultant-pornpavit` | `/consultants/` | 1:1 | Portrait of Assoc. Prof. Dr. Pornpavit Sripirom | 7.Consultant/7.Consultant.docx (image inside the document) |
+| `consultant-chaiporn` | `/consultants/` | 1:1 | Portrait of Chaiporn Siramanakul, M.D. | 7.Consultant/7.Consultant.docx (image inside the document) |
+| `consultant-piyachat` | `/consultants/` | 1:1 | Portrait of Piyachat Kosalwat, M.D. | 7.Consultant/7.Consultant.docx (image inside the document) |
+| `consultant-wongthawat` | `/consultants/` | 1:1 | Portrait of Asst. Prof. Dr. Wongthawat Liawrungrueang | 7.Consultant/7.1Consultant Medlink.docx (image inside the document) |
+| `consultant-thitikan` | `/consultants/` | 1:1 | Portrait of Dr. Thitikan Wangapakul, M.D. | 7.Consultant/7.1Consultant Medlink.docx (image inside the document) |
+| `consultant-choladawan` | `/consultants/` | 1:1 | Portrait of Choladawan Moonjaita | 7.Consultant/7.1Consultant Medlink.docx (image inside the document) |
+| `healthcare-hero` | `/healthcare-access/` | 16:9 | A volunteer doctor in a mask sits at a desk talking with a patient in traditional highland dress (hero background, under the dark overlay) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0362.JPG |
+| `healthcare-outreach-1` | `/healthcare-access/` | 4:3 | Members observe a volunteer doctor at the Mae Chaem clinic, February 2026 | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย21Feb2025 ตรวจคนไข้ complete/IMG_7388.JPG |
+| `healthcare-outreach-2` | `/healthcare-access/` | 4:3 | Handing out medicine at the clinic pharmacy, February 2025 | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/28Feb2025_ตรวจคนไข้_เช้า/LINE_ALBUM_กล้องยุ้ย Day2ตรวจคนไข้_260114_58.jpg |
+| `healthcare-first-aid-1` | `/healthcare-access/` | 4:3 | Students practice splinting an arm, Saint Joseph Mae Chaem School, February 2026 | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย21Feb2025 สอน first Aid complete/อ.พร สอนเข้าเฝือก 21feb2025 complete/S__72138762.jpg |
+| `healthcare-first-aid-2` | `/healthcare-access/` | 4:3 | MedLink members introduce the first aid session, February 2026 | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย21Feb2025 สอน first Aid complete/S__26902557_0.jpg |
+| `community-hero` | `/community-empowerment/` | 16:9 | Three MedLink members teach at the front of a classroom of children in Mae Chaem (hero background, under the dark overlay) | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/28Feb2025_RISสอน Physic+English  complete/LINE_ALBUM_แม่แจ่ม Day 2 บ่าย_260114_17.jpg |
+| `community-learning-1` | `/community-empowerment/` | 4:3 | A class at Saint Joseph Mae Chaem School, February 2025 | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/กล้องหมอจอย/LINE_ALBUM_กล้องอาจารย์อนุชิต_260114_17.jpg |
+| `community-bakery-1` | `/community-empowerment/` | 4:3 | A dessert-making class, February 2025 | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/กล้องหมอจอย/LINE_ALBUM_กล้องอาจารย์อนุชิต_260114_14.jpg |
+| `community-bakery-2` | `/community-empowerment/` | 4:3 | The finished cupcakes and desserts, February 2025 | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/28Feb2025_ทำขนม/LINE_ALBUM_กล้องยุ้ย Day2-ทำขนม_260114_3.jpg |
+| `community-products-1` | `/community-empowerment/` | 4:3 | Hand-woven highland shirts at the Bangkok Education Fair, March 2025 | 5.Activity กิจกรรม/2025/ฺขายเสื้อBangkok Fair_Final/IMG_3918.JPG |
+| `community-products-2` | `/community-empowerment/` | 4:3 | Highland women at work on hand-sewn goods | 5.Activity กิจกรรม/2025/ชาวเข้าทอผ้า_Final/LINE_ALBUM_ภาพชาวเขาทอผ้า_260114_10.jpg |
+| `community-essentials-1` | `/community-empowerment/` | 4:3 | Delivering dry food and essentials to a highland village, February 2026 | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดออย21Feb2025 Donate หมู่บ้าน complete/IMG_7441.JPG |
+| `community-water-1` | `/community-empowerment/` | 4:3 | With villagers at the new water tank, February 2025 | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/27Feb2025_กล้องยุ้ย_เข้าหมู่บ้าน/LINE_ALBUM_แม่แจ่ม day 1_260114_28.jpg |
+| `community-water-2` | `/community-empowerment/` | 4:3 | Visiting the village's water source, February 2025 | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/27.02_เข้าหมู่บ้าน_complete/LINE_ALBUM_กล้องอาจารย์อนุชิต_260114_23.jpg |
+| `medical-hero` | `/medical-exploration/` | 16:9 | MedLink members in scrubs, caps, and masks stand with a surgeon in an operating room (hero background, under the dark overlay) | 5.Activity กิจกรรม/2025/Shadow บ้านนแพ้ว_มกราคม 2025_Final/IMG_9285.JPG |
+| `medical-shadowing-1` | `/medical-exploration/` | 4:3 | Shadowing at Siriraj Hospital, June 2026 | 5.Activity กิจกรรม/2026/Shadow_Siriraj complete/IMG_0547.JPG |
+| `medical-shadowing-2` | `/medical-exploration/` | 4:3 | At the Orthopedic Institute, Phyathai Phaholyothin Hospital | 5.Activity กิจกรรม/2025/Shadow พญาไทพหลโยธิน_มค 2025_Final/IMG_9258.JPG |
+| `medical-conferences-1` | `/medical-exploration/` | 4:3 | Registration desk at the 17th ThaiMISST, September 2026 | 5.Activity กิจกรรม/2026/ThaisMisst_23-26 Sep 2026 complete/ThaiMisst 23Sep2026 complete/IMG_3720.jpg |
+| `medical-conferences-2` | `/medical-exploration/` | 4:3 | Members perform on stage at the 10th ASEAN MISST, February 2025 | 5.Activity กิจกรรม/2025/AseanMisst เล่นดนตรี_Final/IMG_3020.JPG |
+| `medical-skills-1` | `/medical-exploration/` | 4:3 | Learning CPR from Rajavithi Hospital doctors, February 2026 | 5.Activity กิจกรรม/2026/Medlink เรียนFirst Aid สอนโดยแพทย์จากราชวิิถี_complete/IMG_6491.JPG |
+| `medical-skills-2` | `/medical-exploration/` | 4:3 | Suturing practice with volunteer doctors in Mae Chaem, February 2026 | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย21Feb2025 เรียนเย็บskin complete/IMG_7378.JPG |
+| `research-hero` | `/research-innovation/` | 16:9 | MedLink members photograph villagers' skin with phones outside a wooden house in a highland village (hero background, under the dark overlay) | 5.Activity กิจกรรม/2024/Skin AI_Done/IMG_8831.JPG |
+| `research-card-rememocare` | `/research-innovation/` | 3:2 | Two MedLink members receive a prize board on stage under a screen reading KU MedAI Innovation Challenge 2026 | 6.Reserch and Innovation/KU MedAI competion_3rd award/S__32497859.jpg |
+| `research-card-epivascan` | `/research-innovation/` | 3:2 | A MedLink member kneels and photographs a villager's arm with a phone | 5.Activity กิจกรรม/2024/Skin AI Final/IMG_8881.JPG |
+| `rememocare-render` | `/projects/rememocare/` | 3:2 | Two MedLink members present RememoCare on an auditorium stage beside a projected slide | 6.Reserch and Innovation/KU MedAI competion_3rd award/S__32497800_0.jpg |
+| `rememocare-award` | `/projects/rememocare/` | 3:2 | Two MedLink members hold a prize board in front of the KU MedAI Innovation Challenge 2026 backdrop | 6.Reserch and Innovation/KU MedAI competion_3rd award/S__32497926.jpg |
+| `epivascan-render` | `/projects/epivascan/` | 3:2 | A MedLink member photographs the back of a patient's neck with a phone at a village clinic | 5.Activity กิจกรรม/2024/Skin AI_Done/IMG_8713.JPG |
+| `impact-hero` | `/our-impact/` | 16:9 | Patients wait under a tent beside a mobile X-ray truck on an outreach day in Mae Chaem (hero background, under the dark overlay) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0341.JPG |
+| `impact-fundraising-1` | `/our-impact/` | 4:3 | Valentine's gifts and instant noodles at school, 2025 | 5.Activity กิจกรรม/2025/ขายมาม่า+วาเลนไทม์_รายได้ซื้อยา_มค 2025_Final/IMG_3780.JPG |
+| `impact-fundraising-2` | `/our-impact/` | 4:3 | Bangkok Education Fair, March 2025 | 5.Activity กิจกรรม/2025/ฺขายเสื้อBangkok Fair_Final/IMG_3934.JPG |
+| `impact-fundraising-3` | `/our-impact/` | 4:3 | Shirt sale at church, 2026 | 5.Activity กิจกรรม/2026/ขึ้นดอย_20-22 Feb2026/ขายเสื้อหน้าโบสถ์/LINE_ALBUM_ขายเสื้อที่โบสถ์_260223_21.jpg |
+| `impact-mamacare` | `/our-impact/` | 4:3 | Community health education run by MamaCare Ghana, May 2026 | Ghana/Copy of IMG_0338.JPG |
+| `timeline-2024` | `/timeline/` | 4:3 | Villagers in traditional highland dress stand with the volunteer medical team at the clinic entrance in Mae Chaem | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0334.JPG |
+| `timeline-2025` | `/timeline/` | 4:3 | A large group of MedLink members in school uniform pose on a lawn at the 10th ASEAN MISST conference | 5.Activity กิจกรรม/2025/AseanMIsst ขายเสื้อ_Final/IMG_3469.JPG |
+| `timeline-2026` | `/timeline/` | 4:3 | MedLink members and villagers gather behind rows of supply bags in front of a wooden chapel | 5.Activity กิจกรรม/2026/ขึ้นดอย_20-22 Feb2026/ภาพรวม/S__13238290_0.jpg |
+| `awards-ku-medai` | `/awards/` | 3:2 | Two MedLink members receive a prize board on stage under a screen reading KU MedAI Innovation Challenge 2026 | 6.Reserch and Innovation/KU MedAI competion_3rd award/S__32497859.jpg |
+| `gallery-01` | `/gallery/` | 4:3 | Registration desk at the 17th ThaiMISST, September 2026 (Medical Exploration, 2026) | 5.Activity กิจกรรม/2026/ThaisMisst_23-26 Sep 2026 complete/ThaiMisst 23Sep2026 complete/IMG_3720.jpg |
+| `gallery-02` | `/gallery/` | 4:3 | Shadowing at Siriraj Hospital, June 2026 (Medical Exploration, 2026) | 5.Activity กิจกรรม/2026/Shadow_Siriraj complete/IMG_0547.JPG |
+| `gallery-03` | `/gallery/` | 4:3 | Community health education run by MamaCare Ghana with MedLink's support, Oti Region, May 2026 (Healthcare Access, 2026) | Ghana/Copy of IMG_0338.JPG |
+| `gallery-04` | `/gallery/` | 4:3 | RememoCare takes second runner-up at the KU MedAI Innovation Challenge, March 2026 (Research & Innovation, 2026) | 6.Reserch and Innovation/KU MedAI competion_3rd award/S__32497859.jpg |
+| `gallery-05` | `/gallery/` | 4:3 | Selling shirts at church to raise funds, 2026 (Fundraisers, 2026) | 5.Activity กิจกรรม/2026/ขึ้นดอย_20-22 Feb2026/ขายเสื้อหน้าโบสถ์/LINE_ALBUM_ขายเสื้อที่โบสถ์_260223_2.jpg |
+| `gallery-06` | `/gallery/` | 4:3 | Members and the volunteer medical team after the thank-you ceremony, Mae Chaem, February 2026 (Healthcare Access, 2026) | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย 22Feb2026 พิธีขอบคุณ complete/IMG_7657.JPG |
+| `gallery-07` | `/gallery/` | 4:3 | Suturing practice with volunteer doctors in Mae Chaem, February 2026 (Medical Exploration, 2026) | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย21Feb2025 เรียนเย็บskin complete/IMG_7378.JPG |
+| `gallery-08` | `/gallery/` | 4:3 | Students practice splinting an arm in the first aid class, February 2026 (Healthcare Access, 2026) | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย21Feb2025 สอน first Aid complete/อ.พร สอนเข้าเฝือก 21feb2025 complete/S__72138762.jpg |
+| `gallery-09` | `/gallery/` | 4:3 | First aid training at Saint Joseph Mae Chaem School, February 2026 (Healthcare Access, 2026) | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย21Feb2025 สอน first Aid complete/LINE_ALBUM_21226_260223_60.jpg |
+| `gallery-10` | `/gallery/` | 4:3 | Patients wait to be seen on clinic day, Mae Chaem, February 2026 (Healthcare Access, 2026) | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย21Feb2025 ตรวจคนไข้ complete/IMG_7399.JPG |
+| `gallery-11` | `/gallery/` | 4:3 | Bringing dry food and essentials to a highland village, February 2026 (Community Empowerment, 2026) | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย20Feb2026_Donate หมู่บ้าน complete/IMG_7204.JPG |
+| `gallery-12` | `/gallery/` | 4:3 | Learning CPR from Rajavithi Hospital doctors, February 2026 (Medical Exploration, 2026) | 5.Activity กิจกรรม/2026/Medlink เรียนFirst Aid สอนโดยแพทย์จากราชวิิถี_complete/IMG_6491.JPG |
+| `gallery-13` | `/gallery/` | 4:3 | Presenting a paper at the 16th ThaiMISST, Ayutthaya, November 2025 (Medical Exploration, 2025) | 5.Activity กิจกรรม/2025/ThaisMISST อยุธยา Nov 2025_Complete/IMG_3625.JPG |
+| `gallery-14` | `/gallery/` | 4:3 | Hand-woven highland shirts at the Bangkok Education Fair, March 2025 (Fundraisers, 2025) | 5.Activity กิจกรรม/2025/ฺขายเสื้อBangkok Fair_Final/IMG_3918.JPG |
+| `gallery-15` | `/gallery/` | 4:3 | With villagers at the new water tank, February 2025 (Community Empowerment, 2025) | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/27Feb2025_กล้องยุ้ย_เข้าหมู่บ้าน/LINE_ALBUM_แม่แจ่ม day 1_260114_28.jpg |
+| `gallery-16` | `/gallery/` | 4:3 | Cupcakes from the baking class, ready to share, February 2025 (Community Empowerment, 2025) | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/28Feb2025_งานขอบคุณ กลางคืน complete/LINE_ALBUM_แม่แจ่ม Day 2 เย็น_260114_6.jpg |
+| `gallery-17` | `/gallery/` | 4:3 | A dessert-making class, February 2025 (Community Empowerment, 2025) | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/กล้องหมอจอย/LINE_ALBUM_กล้องอาจารย์อนุชิต_260114_14.jpg |
+| `gallery-18` | `/gallery/` | 4:3 | Teaching at Saint Joseph Mae Chaem School, February 2025 (Community Empowerment, 2025) | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/28Feb2025_RISสอน Physic+English  complete/LINE_ALBUM_แม่แจ่ม Day 2 บ่าย_260114_17.jpg |
+| `gallery-19` | `/gallery/` | 4:3 | Handing out medicine at the clinic pharmacy, February 2025 (Healthcare Access, 2025) | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/28Feb2025_ตรวจคนไข้_เช้า/LINE_ALBUM_กล้องยุ้ย Day2ตรวจคนไข้_260114_58.jpg |
+| `gallery-20` | `/gallery/` | 4:3 | A volunteer doctor sees patients while members observe, February 2025 (Healthcare Access, 2025) | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/28Feb2025_ตรวจคนไข้_บ่าย/LINE_ALBUM_แม่แจ่ม Day 2_260114_101.jpg |
+| `gallery-21` | `/gallery/` | 4:3 | Selling highland products at the 10th ASEAN MISST, February 2025 (Fundraisers, 2025) | 5.Activity กิจกรรม/2025/AseanMIsst ขายเสื้อ_Final/IMG_3028.JPG |
+| `gallery-22` | `/gallery/` | 4:3 | Members perform on stage at the 10th ASEAN MISST, February 2025 (Medical Exploration, 2025) | 5.Activity กิจกรรม/2025/AseanMisst เล่นดนตรี_Final/IMG_3020.JPG |
+| `gallery-23` | `/gallery/` | 4:3 | Registration desk at the 10th ASEAN MISST, February 2025 (Medical Exploration, 2025) | 5.Activity กิจกรรม/2025/AseanMisst_Feb 26 2025 complete/LINE_ALBUM_26225_260114_13.jpg |
+| `gallery-24` | `/gallery/` | 4:3 | Hand-woven cloth at the FunFair, February 2025 (Fundraisers, 2025) | 5.Activity กิจกรรม/2025/FunFair 22.02.2025_Final/LINE_ALBUM_fun fair 22022025_260114_21.jpg |
+| `gallery-25` | `/gallery/` | 4:3 | Selling instant noodles and Valentine's gifts at school to buy medicine, 2025 (Fundraisers, 2025) | 5.Activity กิจกรรม/2025/ขายมาม่า+วาเลนไทม์_รายได้ซื้อยา_มค 2025_Final/S__17285264.jpg |
+| `gallery-26` | `/gallery/` | 4:3 | At the Orthopedic Institute, Phyathai Phaholyothin Hospital (Medical Exploration, 2025) | 5.Activity กิจกรรม/2025/Shadow พญาไทพหลโยธิน_มค 2025_Final/IMG_9258.JPG |
+| `gallery-27` | `/gallery/` | 4:3 | In the operating room at Banphaeo Hospital (Medical Exploration, 2025) | 5.Activity กิจกรรม/2025/Shadow บ้านนแพ้ว_มกราคม 2025_Final/IMG_9285.JPG |
+| `gallery-28` | `/gallery/` | 4:3 | Collecting skin photos in a highland village for the Skin & AI project, June 2024 (Research & Innovation, 2024) | 5.Activity กิจกรรม/2024/Skin AI_Done/IMG_8831.JPG |
+| `gallery-29` | `/gallery/` | 4:3 | Photographing skin with a phone for the Skin & AI project, June 2024 (Research & Innovation, 2024) | 5.Activity กิจกรรม/2024/Skin AI Final/IMG_8881.JPG |
+| `gallery-30` | `/gallery/` | 4:3 | A card game with the children, Mae Chaem, June 2024 (Community Empowerment, 2024) | 5.Activity กิจกรรม/2024/Skin AI Final/IMG_8981.JPG |
+| `gallery-31` | `/gallery/` | 4:3 | Snacks and gifts for the children, Mae Chaem, June 2024 (Community Empowerment, 2024) | 5.Activity กิจกรรม/2024/Skin AI Final/IMG_9105.JPG |
+| `gallery-32` | `/gallery/` | 4:3 | Sorting medicine for patients, February 2024 (Healthcare Access, 2024) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0510.JPG |
+| `gallery-33` | `/gallery/` | 4:3 | Villagers and the volunteer medical team at the clinic, February 2024 (Healthcare Access, 2024) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0334.JPG |
+| `gallery-34` | `/gallery/` | 4:3 | Patients wait beside the mobile X-ray truck, February 2024 (Healthcare Access, 2024) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0341.JPG |
+| `gallery-35` | `/gallery/` | 4:3 | A volunteer doctor sees a patient, February 2024 (Healthcare Access, 2024) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0362.JPG |
+| `gallery-36` | `/gallery/` | 4:3 | The walk into a highland valley on our first trip to Mae Chaem, February 2024 (Healthcare Access, 2024) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0192.JPG |
+| `get-involved-hero` | `/get-involved/` | 16:9 | MedLink members hold a MedLink Pathways banner beside villagers and bags of supplies in front of a wooden chapel (hero background, under the dark overlay) | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย20Feb2026_Donate หมู่บ้าน complete/IMG_7204.JPG |
+
+## Logos
+
+Partner, sponsor, and competition logos. "Placeholder" entries show a gray card with the name until a logo file is added.
+
+| Page URL | For | Status |
 | --- | --- | --- |
-| `/` | Organization logo | Banphaeo Hospital |
-| `/` | Organization logo | Rajavithi Hospital |
-| `/` | Organization logo | Phyathai Phaholyothin Hospital |
-| `/` | Organization logo | Siriraj Hospital |
-| `/` | Organization logo | Saint Joseph Mae Chaem School |
-| `/` | Organization logo | ASEAN MISST |
-| `/` | Organization logo | ThaiMISST |
-| `/` | Organization logo | MamaCare |
-| `/partners/` | Organization logo | Banphaeo Hospital |
-| `/partners/` | Organization logo | [Volunteer medical team name] |
-| `/partners/` | Organization logo | [Pulma partner hospital 1] |
-| `/partners/` | Organization logo | [Pulma partner hospital 2] |
-| `/partners/` | Organization logo | Banphaeo Hospital |
-| `/partners/` | Organization logo | Rajavithi Hospital |
-| `/partners/` | Organization logo | Phyathai Phaholyothin Hospital |
-| `/partners/` | Organization logo | Siriraj Hospital |
-| `/partners/` | Organization logo | [Thermography study hospital 1] |
-| `/partners/` | Organization logo | [Thermography study hospital 2] |
-| `/partners/` | Organization logo | [Thermography study hospital 3] |
-| `/partners/` | Organization logo | Saint Joseph Mae Chaem School |
-| `/partners/` | Organization logo | ASEAN MISST |
-| `/partners/` | Organization logo | ThaiMISST |
-| `/partners/` | Organization logo | MamaCare (Ghana) |
-| `/partners/` | Organization logo | [Sponsor 1] |
-| `/partners/` | Organization logo | [Sponsor 2] |
-| `/partners/` | Organization logo | [Sponsor 3] |
-| `/partners/` | Organization logo | [Sponsor 4] |
-| `/projects/pulma/` | Competition logo | iCAN International Invention Innovation Competition (Toronto) |
-| `/projects/pulma/` | Competition logo | TISIAS (Toronto International Society of Innovation & Advanced Skills) |
-| `/projects/pulma/` | Competition logo | HIUF (Highly Innovative and Unique Foundation, Saudi Arabia) |
-| `/projects/telesync/` | Competition logo | Award |
-| `/projects/rememocare/` | Competition logo | Blue Ocean Student Entrepreneur Competition 2026 |
-| `/projects/rememocare/` | Competition logo | KU MedAI Innovation Challenge 2026 |
-| `/awards/` | Competition logo | KU MedAI Innovation Challenge |
-| `/awards/` | Competition logo | Blue Ocean Student Entrepreneur Competition |
-| `/awards/` | Competition logo | iCAN International Invention Innovation Competition (Toronto) |
-| `/awards/` | Competition logo | TISIAS (Toronto International Society of Innovation & Advanced Skills) |
-| `/awards/` | Competition logo | HIUF (Highly Innovative and Unique Foundation, Saudi Arabia) |
+| `/` | Banphaeo Hospital (organization logo) | Placeholder |
+| `/` | Rajavithi Hospital (organization logo) | Placeholder |
+| `/` | Phyathai Phaholyothin Hospital (organization logo) | Placeholder |
+| `/` | Siriraj Hospital (organization logo) | Placeholder |
+| `/` | Saint Joseph Mae Chaem School (organization logo) | Placeholder |
+| `/` | ASEAN MISST (organization logo) | Placeholder |
+| `/` | ThaiMISST (organization logo) | Placeholder |
+| `/` | MamaCare (organization logo) | Real logo |
+| `/partners/` | Banphaeo Hospital (organization logo) | Placeholder |
+| `/partners/` | [Volunteer medical team name] (organization logo) | Placeholder |
+| `/partners/` | [Pulma partner hospital 1] (organization logo) | Placeholder |
+| `/partners/` | [Pulma partner hospital 2] (organization logo) | Placeholder |
+| `/partners/` | Banphaeo Hospital (organization logo) | Placeholder |
+| `/partners/` | Rajavithi Hospital (organization logo) | Placeholder |
+| `/partners/` | Phyathai Phaholyothin Hospital (organization logo) | Placeholder |
+| `/partners/` | Siriraj Hospital (organization logo) | Placeholder |
+| `/partners/` | [Thermography study hospital 1] (organization logo) | Placeholder |
+| `/partners/` | [Thermography study hospital 2] (organization logo) | Placeholder |
+| `/partners/` | [Thermography study hospital 3] (organization logo) | Placeholder |
+| `/partners/` | Saint Joseph Mae Chaem School (organization logo) | Placeholder |
+| `/partners/` | Ruamrudee International School (RIS) (organization logo) | Real logo |
+| `/partners/` | ASEAN MISST (organization logo) | Placeholder |
+| `/partners/` | ThaiMISST (organization logo) | Placeholder |
+| `/partners/` | MamaCare (Ghana) (organization logo) | Real logo |
+| `/partners/` | One Hundred Medical (organization logo) | Real logo |
+| `/partners/` | Quality Extrusion (organization logo) | Real logo |
+| `/partners/` | J2K For Home (organization logo) | Real logo |
+| `/partners/` | Kaizen Products (organization logo) | Real logo |
+| `/partners/` | Ramintra Factory Warehouse (organization logo) | Real logo |
+| `/partners/` | P. Charoen Farm (organization logo) | Real logo |
+| `/partners/` | Workpoint (organization logo) | Real logo |
+| `/partners/` | TIC Toumi (organization logo) | Real logo |
+| `/partners/` | Teach Tech Co., Ltd. (organization logo) | Real logo |
+| `/partners/` | Tara Aluminium (organization logo) | Real logo |
+| `/partners/` | Somchai Soi 5 (organization logo) | Real logo |
+| `/projects/pulma/` | iCAN International Invention Innovation Competition (Toronto) (competition logo) | Placeholder |
+| `/projects/pulma/` | TISIAS (Toronto International Society of Innovation & Advanced Skills) (competition logo) | Placeholder |
+| `/projects/pulma/` | HIUF (Highly Innovative and Unique Foundation, Saudi Arabia) (competition logo) | Placeholder |
+| `/projects/telesync/` | Award (competition logo) | Placeholder |
+| `/projects/rememocare/` | Blue Ocean Student Entrepreneur Competition 2026 (competition logo) | Placeholder |
+| `/awards/` | Blue Ocean Student Entrepreneur Competition (competition logo) | Placeholder |
+| `/awards/` | iCAN International Invention Innovation Competition (Toronto) (competition logo) | Placeholder |
+| `/awards/` | TISIAS (Toronto International Society of Innovation & Advanced Skills) (competition logo) | Placeholder |
+| `/awards/` | HIUF (Highly Innovative and Unique Foundation, Saudi Arabia) (competition logo) | Placeholder |

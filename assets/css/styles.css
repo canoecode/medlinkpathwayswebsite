@@ -29,6 +29,7 @@
   --chip-on-photo: rgba(255, 255, 255, 0.92);
   --overlay: rgba(0, 0, 0, 0.4);
   --scrim: rgba(0, 0, 0, 0.3);
+  --scrim-strong: rgba(0, 0, 0, 0.45);
   --shadow: rgba(16, 24, 40, 0.1);
   --text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
   --lightbox-bg: rgba(12, 18, 28, 0.94);
@@ -726,8 +727,10 @@ button {
 }
 
 /* Photos at the top of a card sit flush with the card edge */
-.card > .photo-slot:first-child .photo-slot__box,
-.card > .photo-slot:first-child > img {
+.person-card > .photo-slot .photo-slot__box,
+.person-card > .photo-slot > img,
+.project-card > .photo-slot .photo-slot__box,
+.project-card > .photo-slot > img {
   border-width: 0 0 1px;
   border-radius: 0;
 }
@@ -1058,6 +1061,13 @@ a.logo-tile:hover {
   justify-content: flex-start;
 }
 
+/* Bottom scrim under the page title so it stays readable over any photo */
+.hero--page .photo-slot--bg::after {
+  background:
+    linear-gradient(to top, var(--scrim-strong) 0, rgba(0, 0, 0, 0) 60%),
+    var(--overlay);
+}
+
 /* Homepage hero: full viewport height, sits under the transparent header */
 .hero--home {
   min-height: max(560px, 100vh);
@@ -1245,7 +1255,7 @@ a.logo-tile:hover {
 
 .site-header__logo img {
   width: auto;
-  height: 24px;
+  height: 40px;
 }
 
 .site-header__donate {
@@ -1282,11 +1292,6 @@ a.logo-tile:hover {
   display: none;
 }
 
-@media (min-width: 640px) {
-  .site-header__logo img {
-    height: 28px;
-  }
-}
 
 @media (min-width: 960px) {
   .site-header__inner {
@@ -1309,13 +1314,12 @@ a.logo-tile:hover {
   .site-header__donate {
     padding-inline: var(--space-3);
   }
-}
 
-@media (min-width: 1200px) {
   .site-header__logo img {
-    height: 32px;
+    height: 48px;
   }
 }
+
 
 /* Transparent state over the homepage hero */
 .site-header.is-transparent {
@@ -1723,7 +1727,7 @@ a.logo-tile:hover {
 
 .site-footer__logo img {
   width: auto;
-  height: 28px;
+  height: 56px;
   filter: brightness(0) invert(1);
 }
 
@@ -2428,7 +2432,9 @@ a.logo-tile:hover {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-4) var(--space-8);
-  margin-bottom: var(--space-3);
+  margin: 0 0 var(--space-3);
+  padding: 0;
+  list-style: none;
 }
 
 .table-wrap {
@@ -2994,7 +3000,342 @@ a.logo-tile:hover {
 }
 
 /* --------------------------------------------------------------------------
-   18. Reduced motion
+   18. Real photos, people, and logos
+   -------------------------------------------------------------------------- */
+
+/* Hero photos: --focus on the figure sets which part stays in view when cropped */
+.photo-slot--bg > img {
+  object-position: var(--focus, 50% 50%);
+}
+
+.photo-slot--round .photo-slot__box,
+.photo-slot--round > img {
+  border-radius: 50%;
+}
+
+/* Row of three photos */
+.photo-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--gutter-tight);
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 640px) {
+  .photo-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--gutter);
+  }
+}
+
+/* Quotes */
+.founder-quote__text,
+.founder-feature__quote {
+  quotes: "\201C" "\201D";
+}
+
+.founder-quote__text p::before,
+.founder-feature__quote p::before {
+  content: open-quote;
+}
+
+.founder-quote__text p::after,
+.founder-feature__quote p::after {
+  content: close-quote;
+}
+
+/* Founders: featured president card */
+.founder-feature {
+  display: grid;
+  gap: var(--space-3);
+  align-items: center;
+  margin-bottom: var(--gutter);
+  padding: var(--space-4) var(--space-3);
+  text-align: center;
+}
+
+.founder-feature .photo-slot {
+  width: 160px;
+  margin-inline: auto;
+}
+
+.founder-feature__name {
+  margin: 0 0 4px;
+}
+
+.founder-feature .person-card__role {
+  margin-bottom: 0;
+}
+
+.founder-feature__quote {
+  margin: var(--space-2) 0 0;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  font-weight: var(--fw-semibold);
+  color: var(--teal);
+}
+
+@media (min-width: 960px) {
+  .founder-feature {
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: var(--space-5);
+    padding: var(--space-5);
+    text-align: left;
+  }
+
+  .founder-feature .photo-slot {
+    width: 200px;
+  }
+}
+
+.founders-grid .person-card__bio {
+  margin-top: 0;
+}
+
+/* Long names must never push a card wider */
+.person-card__name,
+.founder-feature__name,
+.team-card__name {
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 640px) and (max-width: 959px) {
+  .founders-grid .person-card__name {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+/* Team: leadership cards */
+@media (min-width: 960px) {
+  .leader-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.leader-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 100%;
+  padding: var(--space-3);
+}
+
+.leader-card .photo-slot {
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.leader-card__body {
+  min-width: 0;
+}
+
+.leader-card .person-card__role {
+  margin-bottom: 0;
+}
+
+.leader-card .person-card__quote {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (min-width: 640px) {
+  .leader-card {
+    gap: var(--space-3);
+  }
+
+  .leader-card .photo-slot {
+    width: 120px;
+  }
+}
+
+/* Team: how we are organized */
+@media (min-width: 640px) {
+  .org-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .org-steps {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.org-step {
+  height: 100%;
+  padding: var(--space-3);
+}
+
+.org-step__verb {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--teal);
+  color: var(--white);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--fw-semibold);
+}
+
+.org-step__title {
+  margin: 0 0 var(--space-1);
+}
+
+.org-step__line {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--muted);
+}
+
+.org-step__areas {
+  margin: var(--space-2) 0 0;
+  padding: var(--space-2) 0 0 18px;
+  border-top: 1px solid var(--border);
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/* Team: executive team cards. Photo beside the text on phones, above it from 640px. */
+.team-grid {
+  gap: var(--gutter-tight);
+}
+
+.team-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  height: 100%;
+  padding: var(--space-2);
+}
+
+.team-card > .photo-slot {
+  width: 88px;
+  flex-shrink: 0;
+}
+
+.team-card > .photo-slot .photo-slot__box,
+.team-card > .photo-slot > img {
+  border-radius: var(--radius-sm);
+}
+
+.team-card__body {
+  min-width: 0;
+}
+
+.team-card__name {
+  margin: 0 0 2px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.team-card__role {
+  margin: 0 0 var(--space-1);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--fw-semibold);
+  color: var(--teal);
+}
+
+.team-card__bio {
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 640px) {
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--gutter);
+  }
+
+  .team-card {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+
+  .team-card > .photo-slot {
+    width: 100%;
+  }
+
+  .team-card > .photo-slot .photo-slot__box,
+  .team-card > .photo-slot > img {
+    border-radius: 0;
+  }
+
+  .team-card__body {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 960px) {
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Real logos */
+.logo-tile--img {
+  justify-content: flex-start;
+  gap: 12px;
+  padding: var(--space-2);
+  border: 1px solid var(--border);
+  background: var(--white);
+  transition: border-color var(--dur) var(--ease);
+}
+
+a.logo-tile--img:hover {
+  border-color: var(--teal);
+  background: var(--white);
+}
+
+.logo-tile__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+}
+
+.logo-tile__logo img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.logo-tile__mark--img {
+  overflow: hidden;
+  background: var(--white);
+}
+
+.logo-tile__mark--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Award cards can show a photo in place of the competition logo */
+.award-card > .photo-slot {
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   19. Reduced motion
    -------------------------------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   *,

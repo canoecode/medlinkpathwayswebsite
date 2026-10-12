@@ -318,29 +318,41 @@
       lbCounter.textContent = (lbIndex + 1) + ' of ' + list.length;
     };
 
+    var lightboxOpen = false;
+
     var openLightbox = function (item, button) {
       opener = button;
       showItem(visibleItems().indexOf(item));
       if (typeof lightbox.showModal === 'function') lightbox.showModal();
       else lightbox.setAttribute('open', '');
+      lightboxOpen = true;
       root.classList.add('is-locked');
       lightbox.querySelector('.lightbox__close').focus();
     };
 
-    var closeLightbox = function () {
-      if (typeof lightbox.close === 'function' && lightbox.open) {
-        lightbox.close();
-      } else {
-        lightbox.removeAttribute('open');
-        onLightboxClosed();
-      }
-    };
-
+    // Unlocks scrolling and returns focus to the photo that was clicked.
+    // Safe to call more than once.
     var onLightboxClosed = function () {
+      if (!lightboxOpen) return;
+      lightboxOpen = false;
       root.classList.remove('is-locked');
       if (opener) opener.focus();
     };
 
+    var closeLightbox = function () {
+      if (typeof lightbox.close === 'function') {
+        if (lightbox.open) lightbox.close();
+      } else {
+        lightbox.removeAttribute('open');
+      }
+      onLightboxClosed();
+    };
+
+    // Escape: the browser fires "cancel" before it closes the dialog.
+    lightbox.addEventListener('cancel', function (event) {
+      event.preventDefault();
+      closeLightbox();
+    });
     lightbox.addEventListener('close', onLightboxClosed);
 
     gallery.addEventListener('click', function (event) {

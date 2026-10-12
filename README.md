@@ -1,8 +1,8 @@
-# MedLink Pathways website (example build)
+# MedLink Pathways website
 
-A complete static example of the MedLink Pathways site: 21 pages, the shared header and footer, and every interaction. It is plain HTML, CSS, and vanilla JavaScript, with no framework and no build step.
+The MedLink Pathways site: 21 pages, the shared header and footer, and every interaction. It is plain HTML, CSS, and vanilla JavaScript, with no framework and no build step.
 
-The only thing missing is photography. Every photo is a labeled placeholder slot (88 in total, listed in [PHOTO-SLOTS.md](PHOTO-SLOTS.md)). Text that is still to come is highlighted in pale yellow, so it is easy to find and fill.
+Most photos are in place: 124 of the 145 photo slots hold real photos, and the other 21 show a labeled gray placeholder until a photo is added. [PHOTO-SLOTS.md](PHOTO-SLOTS.md) lists every slot, which ones are still empty, and which original file each photo came from. Text that is still to come is highlighted in pale yellow, so it is easy to find and fill.
 
 ## Run it locally
 
@@ -41,12 +41,13 @@ Any static host works for deployment. On Netlify, `_redirects` is picked up auto
 │   ├── js/main.js                Dropdowns, mobile menu, sticky header, smooth scroll,
 │   │                             reveal on scroll, gallery filters and lightbox,
 │   │                             form validation, copy button
-│   └── images/logo.svg           Placeholder wordmark (replace with the real logo)
+│   └── images/                   logo.png, share-default.jpg, and one .webp per photo,
+│                                 named after its slot (home-hero.webp, gallery-01.webp)
 ├── scripts/check-links.mjs       Link checker (see below)
 ├── _redirects                    Old URLs to new pages (Netlify format, 301)
 ├── robots.txt
 ├── sitemap.xml                   All 21 URLs on https://www.medlinkpathways.com
-├── PHOTO-SLOTS.md                Every photo slot: ID, page, ratio, description
+├── PHOTO-SLOTS.md                Every photo slot: ID, page, ratio, what it shows
 └── README.md
 ```
 
@@ -58,7 +59,9 @@ The contact details in the footer (`[Organization email]`, `[Phone]`, and the so
 
 ## Replacing a photo slot
 
-Every photo slot looks like this:
+A slot that already has a photo is an `<img>` inside a `<figure class="photo-slot">`. To swap the photo, save the new one over the old file in `/assets/images/` (same name, same ratio), then update the `alt` text and the caption in the HTML.
+
+An empty slot looks like this:
 
 ```html
 <figure class="photo-slot" data-slot="home-who-we-are" style="--ratio: 4 / 3;">
@@ -89,10 +92,12 @@ The stylesheet gives the `<img>` the same ratio, corner radius, and cropping (`o
 
 Notes for special slots:
 
-- **Hero backgrounds** (`photo-slot--bg`): replace the box with the `<img>` the same way. The 40% dark overlay sits on the `<figure>`, so it stays in place. Leave out `loading="lazy"` on hero photos.
-- **Round portraits** (`photo-slot--avatar`, 96px): use a square photo. It is cropped to a circle automatically.
-- **Gallery** (`/gallery/`): keep the `<button class="photo-slot__open">` inside each figure. It opens the lightbox, which shows whatever is in the slot, box or image.
-- **Logo placeholders** (partners strip, Partners and Sponsors, award cards): see the second table in PHOTO-SLOTS.md.
+- **Hero backgrounds** (`photo-slot--bg`): replace the box with the `<img>` the same way. The dark overlay sits on the `<figure>`, so it stays in place. Leave out `loading="lazy"` on hero photos. To choose which part of the photo stays in view when the hero is cropped, add `--focus` to the figure's style, for example `style="--ratio: 16 / 9; --focus: 50% 60%;"` (left to right, then top to bottom).
+- **Portraits** (Founders, Our Team, Consultants): use a square photo, about 720px. Slots with `photo-slot--avatar` or `photo-slot--round` are cropped to a circle automatically.
+- **Gallery** (`/gallery/`): keep the `<button class="photo-slot__open">` inside each figure. It opens the lightbox, which shows whatever is in the slot, box or image. To add a photo, copy one `<li class="gallery__item">`, set `data-program` and `data-year` for the filters, and update the "Showing 36 of 36 photos" line.
+- **Logos** (partners strip, Partners and Sponsors, award cards): see the Logos table in PHOTO-SLOTS.md. On the Partners page a real logo is an `<img>` inside `<span class="logo-tile__logo">`; a placeholder tile has a gray icon in its place.
+
+Before publishing a photo, strip its location data. The photos already on the site were saved without EXIF or GPS data.
 
 ## Text placeholders
 
@@ -110,8 +115,14 @@ These parts are already built but hidden with the `hidden` attribute. A comment 
 
 ## Logo and share image
 
-- Replace `/assets/images/logo.svg` with the real logo. The header and footer show it in white over dark backgrounds using a CSS filter. If the real logo needs its own white version, add it and point the footer and the transparent header at it in `layout.js`.
-- Every page's Open Graph tags point at `/assets/images/share-default.jpg`, which does not exist yet. Add a 1200 x 630 image at that path.
+- The logo is `/assets/images/logo.png`, cut out of the MedLink Pathways banner artwork with a transparent background. If you have the original vector file, save it over this one (or as `logo.svg` and update the two `<img>` tags in `layout.js`). The header and footer show the logo in white over dark backgrounds using a CSS filter.
+- Every page's Open Graph tags point at `/assets/images/share-default.jpg`, a 1200 x 630 crop of a trip photo. This is the picture shown when a page is shared on social media or in chat apps.
+
+## People and partners
+
+- **Founders** (`/founders/`), **Our Team** (`/our-team/`), and **Consultants & Doctors** (`/consultants/`) use the names, roles, quotes, and bios from the documents supplied with the photos. Bios are in each person's own words. Email addresses from those documents are not published.
+- **Members** on `/our-team/` and **Volunteer Doctors** on `/consultants/` are still placeholders.
+- **Partners & Sponsors** (`/partners/`): the company logos supplied are listed under Sponsors. Move a tile to another group by moving its `<li>`.
 
 ## Contact form
 
@@ -131,6 +142,8 @@ Every color, font size, spacing value, and radius is a CSS custom property at th
 
 ## Accessibility notes
 
-- One `h1` per page and no skipped heading levels. Where the spec calls for H3-sized group titles directly under the page title (Partners, Awards), the headings are `h2` elements styled at H3 size.
+- One `h1` per page and no skipped heading levels. Where a page has H3-sized group titles directly under the page title (Partners, Awards), the headings are `h2` elements styled at H3 size.
+- Every photo has `alt` text that says what it shows. Update it when you swap a photo.
+- Hero titles sit on a dark overlay with an extra gradient behind the text, so they stay readable over any photo.
 - The dropdowns, mobile menu, gallery filters, lightbox, and form all work from the keyboard. Escape closes the dropdowns, the mobile menu, and the lightbox.
 - Smooth scrolling, transitions, and the fade-in on scroll are turned off when the visitor's system asks for reduced motion.

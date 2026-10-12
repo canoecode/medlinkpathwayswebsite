@@ -157,7 +157,7 @@
     '<a class="skip-link" href="#main">Skip to content</a>' +
     '<header class="site-header' + (overlay ? ' site-header--overlay is-transparent' : '') + '">' +
       '<div class="container site-header__inner">' +
-        '<a class="site-header__logo" href="/"><img src="/assets/images/logo.svg" alt="MedLink Pathways" width="210" height="32"></a>' +
+        '<a class="site-header__logo" href="/"><img src="/assets/images/logo.png" alt="MedLink Pathways" width="138" height="60"></a>' +
         '<nav class="site-nav" aria-label="Main">' +
           '<ul class="site-nav__list">' +
             desktopNav +
@@ -197,7 +197,7 @@
       '<div class="container">' +
         '<div class="site-footer__grid">' +
           '<div class="site-footer__brand">' +
-            '<a class="site-footer__logo" href="/"><img src="/assets/images/logo.svg" alt="MedLink Pathways" width="210" height="32"></a>' +
+            '<a class="site-footer__logo" href="/"><img src="/assets/images/logo.png" alt="MedLink Pathways" width="138" height="60"></a>' +
             '<p class="site-footer__tagline">Empowering future doctors to care, connect, and create opportunities for communities.</p>' +
           '</div>' +
           footerColumn('who-we-are', 'Who We Are', WHO_WE_ARE) +
