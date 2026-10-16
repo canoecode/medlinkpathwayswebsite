@@ -26,15 +26,6 @@
     { label: 'Research & Innovation', href: '/research-innovation/' }
   ];
 
-  // Shown as an indented sub-list under Research & Innovation.
-  var PROJECTS = [
-    { label: 'Pulma', href: '/projects/pulma/' },
-    { label: 'TeleSync', href: '/projects/telesync/' },
-    { label: 'RememoCare', href: '/projects/rememocare/' },
-    { label: 'EpivaScan', href: '/projects/epivascan/' },
-    { label: 'Thermography Study', href: '/projects/thermography/' }
-  ];
-
   var OUR_IMPACT = [
     { label: 'Impact at a Glance', href: '/our-impact/' },
     { label: 'Timeline', href: '/timeline/' },
@@ -44,7 +35,7 @@
 
   var NAV = [
     { id: 'who-we-are', label: 'Who We Are', items: WHO_WE_ARE },
-    { id: 'what-we-do', label: 'What We Do', items: WHAT_WE_DO, projects: PROJECTS, projectsUnder: '/research-innovation/' },
+    { id: 'what-we-do', label: 'What We Do', items: WHAT_WE_DO },
     { id: 'our-impact', label: 'Our Impact', items: OUR_IMPACT }
   ];
 
@@ -85,6 +76,16 @@
     return esc(value).replace(/\[([^\]]+)\]/g, '<span class="placeholder-text">[$1]</span>');
   }
 
+  // The site can live in a subfolder (GitHub Pages serves it at /medlinkpathwayswebsite/).
+  // Links in this file are written from the site root ('/our-story/') and resolved
+  // against the folder that holds /assets/js/layout.js.
+  var script = document.currentScript || document.querySelector('script[src*="assets/js/layout.js"]');
+  var BASE = script ? script.src.replace(/assets\/js\/layout\.js([?#].*)?$/, '') : window.location.origin + '/';
+
+  function siteUrl(path) {
+    return new URL(path.replace(/^\//, ''), BASE).href;
+  }
+
   function normalize(path) {
     path = (path || '/').replace(/index\.html$/, '');
     return path.charAt(path.length - 1) === '/' ? path : path + '/';
@@ -93,7 +94,7 @@
   var here = normalize(window.location.pathname);
 
   function isHere(href) {
-    return normalize(href) === here;
+    return normalize(new URL(siteUrl(href)).pathname) === here;
   }
 
   function current(href) {
@@ -101,7 +102,7 @@
   }
 
   function groupIsHere(group) {
-    return group.items.concat(group.projects || []).some(function (item) {
+    return group.items.some(function (item) {
       return isHere(item.href);
     });
   }
@@ -113,11 +114,7 @@
   function groupList(group, cls) {
     var html = '<ul class="' + cls + '">';
     group.items.forEach(function (item) {
-      html += '<li><a href="' + item.href + '"' + current(item.href) + '>' + esc(item.label) + '</a>';
-      if (group.projects && item.href === group.projectsUnder) {
-        html += '<ul class="' + cls + '-sub" aria-label="Research projects">' + group.projects.map(link).join('') + '</ul>';
-      }
-      html += '</li>';
+      html += link(item);
     });
     return html + '</ul>';
   }
@@ -222,6 +219,15 @@
         '</div>' +
       '</div>' +
     '</footer>';
+
+  // Point every root-relative link and image at the site folder.
+  function rebase(html) {
+    return html.replace(/(href|src)="\/(?!\/)/g, function (m, attr) {
+      return attr + '="' + BASE;
+    });
+  }
+  headerHTML = rebase(headerHTML);
+  footerHTML = rebase(footerHTML);
 
   var headerSlot = document.getElementById('site-header');
   var footerSlot = document.getElementById('site-footer');

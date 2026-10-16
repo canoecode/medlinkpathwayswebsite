@@ -1,6 +1,6 @@
 # Photo Slots
 
-The site has **145 photo slots**: **124 hold real photos** and **21 are still placeholders**.
+The site has **148 photo slots**: **138 hold real photos** and **10 are still placeholders**.
 
 Photos live in `/assets/images/` as `.webp` files. To fill or swap a slot, see README.md, "Replacing a photo slot". Search the HTML for `data-slot="<slot-id>"` to find a slot on its page.
 
@@ -10,25 +10,14 @@ These slots show a gray labeled placeholder until a photo is added.
 
 | Slot ID | Page URL | Ratio | Description |
 | --- | --- | --- | --- |
-| `team-member-01` | `/our-team/` | 1:1 | member portrait |
-| `team-member-02` | `/our-team/` | 1:1 | member portrait |
-| `team-member-03` | `/our-team/` | 1:1 | member portrait |
-| `team-member-04` | `/our-team/` | 1:1 | member portrait |
-| `team-member-05` | `/our-team/` | 1:1 | member portrait |
-| `team-member-06` | `/our-team/` | 1:1 | member portrait |
-| `team-member-07` | `/our-team/` | 1:1 | member portrait |
-| `team-member-08` | `/our-team/` | 1:1 | member portrait |
-| `team-member-09` | `/our-team/` | 1:1 | member portrait |
-| `team-member-10` | `/our-team/` | 1:1 | member portrait |
-| `team-member-11` | `/our-team/` | 1:1 | member portrait |
-| `team-member-12` | `/our-team/` | 1:1 | member portrait |
+| `team-exec-new-new` | `/our-team/` | 1:1 | portrait of Patchareerat (New New) Yangsakunshinnapak |
+| `team-exec-yuta` | `/our-team/` | 1:1 | portrait of Yuta |
+| `team-exec-sean` | `/our-team/` | 1:1 | portrait of Sean |
+| `team-exec-sandrea` | `/our-team/` | 1:1 | portrait of Sandrea |
 | `healthcare-cataract-1` | `/healthcare-access/` | 4:3 | a patient after surgery |
 | `research-card-pulma` | `/research-innovation/` | 3:2 | Pulma render |
 | `research-card-telesync` | `/research-innovation/` | 3:2 | TeleSync render |
 | `research-card-thermography` | `/research-innovation/` | 3:2 | Thermography Study render |
-| `pulma-render` | `/projects/pulma/` | 3:2 | Pulma render |
-| `telesync-render` | `/projects/telesync/` | 3:2 | TeleSync render |
-| `thermography-method` | `/projects/thermography/` | 3:2 | illustration of the thermal camera method |
 | `timeline-2027` | `/timeline/` | 4:3 | What's Next highlight |
 | `donate-promptpay-qr` | `/donate/` | 1:1 | PromptPay QR code (shown at 200px wide) |
 
@@ -58,31 +47,48 @@ These slots show a gray labeled placeholder until a photo is added.
 | `founder-natprima` | `/founders/` | 1:1 | Portrait of Natprima Sae-Heng | 4.Organization/รายชื่อ/Co Founder/06 Natprima Sae-Heng/06 Natprima Sae-Heng.jpg |
 | `founder-prach` | `/founders/` | 1:1 | Portrait of Prach Mangkhalathanakun | 4.Organization/รายชื่อ/Co Founder/07 Prach Mangkhalathanakun/07  Prach Mangkhalathanakun.jpeg |
 | `founders-group` | `/founders/` | 3:2 | MedLink co-founders at graduation, August 2026 | 1.History ประวัติ/Co-Founder Medlink .jpg |
-| `team-president` | `/our-team/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
-| `team-vice-president` | `/our-team/` | 1:1 | Portrait of Akarapat Nawatrilap (Prem) | 4.Organization/รายชื่อ/Executive team/Akarapat/Akarapat.jpg |
-| `team-nuttapat` | `/our-team/` | 1:1 | Portrait of Nuttapat Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Nuttapat.jpg |
-| `team-weeranda` | `/our-team/` | 1:1 | Portrait of Weeranda Kiatlertpongsa | 4.Organization/รายชื่อ/Executive team/01 Weeranda Kiatlertpongsa/01 Weeranda Kiatlertpongsa.jpeg |
-| `team-akira-w` | `/our-team/` | 1:1 | Portrait of Akira Wongwannaraksa | 4.Organization/รายชื่อ/Executive team/02 Akira Wongwannaraksa/02 Akira Wongwannaraksa.jpeg |
-| `team-xinyue` | `/our-team/` | 1:1 | Portrait of Xinyue Gao | 4.Organization/รายชื่อ/Executive team/03 Xinyue Gao/03 Xinyue Gao.jpeg |
-| `team-xinya` | `/our-team/` | 1:1 | Portrait of Xinya Natalie Neui | 4.Organization/รายชื่อ/Executive team/04 Xinya Natalie Neui/Xinya Natalie Neui.jpeg |
-| `team-burich` | `/our-team/` | 1:1 | Portrait of Burich Benjarattananon | 4.Organization/รายชื่อ/Executive team/05 Burich Benjarattananon/05 Burich Benjarattananon.jpg |
-| `team-panboon` | `/our-team/` | 1:1 | Portrait of Panboon Chantarasupawong | 4.Organization/รายชื่อ/Executive team/06 Panboon Chantarasupawong/06 Panboon Chantarasupawong.jpeg |
-| `team-kulisara` | `/our-team/` | 1:1 | Portrait of Kulisara (Xin) Viriyayodyiem | 4.Organization/รายชื่อ/Executive team/07 Kulisara Viriyayodyiem/07 Kulisara Viriyayodyiem.jpeg |
-| `team-pakawat` | `/our-team/` | 1:1 | Portrait of Pakawat Poldetch | 4.Organization/รายชื่อ/Executive team/08 Pakawat Poldetch/08 Pakawat Poldetch.jpg |
-| `team-sikkha` | `/our-team/` | 1:1 | Portrait of Sikkha Sinthuchat | 4.Organization/รายชื่อ/Executive team/09 Sikkha Sinthuchat/09 Sikkha Sinthuchat.jpeg |
-| `team-kamolsith` | `/our-team/` | 1:1 | Portrait of Kamolsith Qawvasut | 4.Organization/รายชื่อ/Executive team/10 Kamolsith Qawvasut/10 Kamolsith Qawvasut.jpg |
-| `team-thanus` | `/our-team/` | 1:1 | Portrait of Thanus Prayoonthong | 4.Organization/รายชื่อ/Executive team/11 Thanus Prayoonthong/11 Thanus Prayoonthong.jpeg |
-| `team-sudfah` | `/our-team/` | 1:1 | Portrait of Sudfah Rattanaveroj | 4.Organization/รายชื่อ/Executive team/12 Sudfah Rattanaveroj/12 Sudfah Rattanaveroj.jpeg |
-| `team-akara` | `/our-team/` | 1:1 | Portrait of Akara Pimmason Hoshina | 4.Organization/รายชื่อ/Executive team/13 Akara Pimmason Hoshina/13 Akara Pimmason Hoshina.jpeg |
-| `team-prytdanai` | `/our-team/` | 1:1 | Portrait of Prytdanai Pawa | 4.Organization/รายชื่อ/Executive team/14 Prytdanai Pawa/14 prytdanai pawa.jpeg |
-| `team-kunanya` | `/our-team/` | 1:1 | Portrait of Kunanya Issarapinyo | 4.Organization/รายชื่อ/Executive team/15 Kunanya Issarapinyo/15 Kunanya Issarapinyo.jpeg |
-| `team-chutikarn` | `/our-team/` | 1:1 | Portrait of Chutikarn Suesattabongkoch | 4.Organization/รายชื่อ/Executive team/16 Pakawat Poldetch/16 Chutikarn Suesattabongkoch.jpeg |
-| `team-siwat` | `/our-team/` | 1:1 | Portrait of Siwat Viriyayodyiem | 4.Organization/รายชื่อ/Executive team/17 Siwat Viriyayodyiem/17 Siwat Viriyayodyiem.jpeg |
-| `team-thitaree` | `/our-team/` | 1:1 | Portrait of Thitaree Phunratanamala | 4.Organization/รายชื่อ/Executive team/18 Thitaree Phunratanamala/18 Thitaree Phunratanamala.jpg |
-| `team-qinhui` | `/our-team/` | 1:1 | Portrait of Qinhui Li | 4.Organization/รายชื่อ/Executive team/19 Qinhui Li/19 Qinhui Li.jpeg |
-| `team-akira-s` | `/our-team/` | 1:1 | Portrait of Akira Sirimothya | 4.Organization/รายชื่อ/Executive team/20 Akira Sirimothya/20 Akira Sirimothya.jpeg |
-| `team-khanapot` | `/our-team/` | 1:1 | Portrait of Khanapot Asakit | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Khanapot.jpg |
-| `team-thitipa` | `/our-team/` | 1:1 | Portrait of Thitipa Sirikul | 4.Organization/รายชื่อ/Executive team/22 Thitipa Sirikul/22 Thitipa Sirikul.jpeg |
+| `team-exec-kundol` | `/our-team/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
+| `team-exec-wanda` | `/our-team/` | 1:1 | Portrait of Weeranda (Wanda) Kiatlertpongsa | 4.Organization/รายชื่อ/Executive team/01 Weeranda Kiatlertpongsa/01 Weeranda Kiatlertpongsa.jpeg |
+| `team-exec-prem` | `/our-team/` | 1:1 | Portrait of Akarapat (Prem) Nawatrilap | NewPeople/Akarapat (Prem) Nawatrilap.png |
+| `team-exec-kao-wan` | `/our-team/` | 1:1 | Portrait of Thitaree (Kao-Wan) Phunratanamala | 4.Organization/รายชื่อ/Executive team/18 Thitaree Phunratanamala/18 Thitaree Phunratanamala.jpg |
+| `team-exec-tiger` | `/our-team/` | 1:1 | Portrait of Junxi (Tiger) Liu | NewPeople/Junxi (Tiger) Liu.webp |
+| `team-exec-kira` | `/our-team/` | 1:1 | Portrait of Akira (Kira) Wongwannaraksa | 4.Organization/รายชื่อ/Executive team/02 Akira Wongwannaraksa/02 Akira Wongwannaraksa.jpeg |
+| `team-exec-saan` | `/our-team/` | 1:1 | Portrait of Siwat (Saan) Viriyayodyiem | 4.Organization/รายชื่อ/Executive team/17 Siwat Viriyayodyiem/17 Siwat Viriyayodyiem.jpeg |
+| `team-exec-atom` | `/our-team/` | 1:1 | Portrait of Akira (Atom) Sirimothya | 4.Organization/รายชื่อ/Executive team/20 Akira Sirimothya/20 Akira Sirimothya.jpeg |
+| `team-exec-pan` | `/our-team/` | 1:1 | Portrait of Panboon (Pan) Chantarasupawong | 4.Organization/รายชื่อ/Executive team/06 Panboon Chantarasupawong/06 Panboon Chantarasupawong.jpeg |
+| `team-exec-messi` | `/our-team/` | 1:1 | Portrait of Pakawat (Messi) Poldetch | 4.Organization/รายชื่อ/Executive team/08 Pakawat Poldetch/08 Pakawat Poldetch.jpg |
+| `team-exec-ben-j` | `/our-team/` | 1:1 | Portrait of Burich (Ben J) Benjarattananon | 4.Organization/รายชื่อ/Executive team/05 Burich Benjarattananon/05 Burich Benjarattananon.jpg |
+| `team-exec-canon` | `/our-team/` | 1:1 | Portrait of Nuttapat (Canon) Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Nuttapat.jpg |
+| `team-junior-mone` | `/our-team/` | 1:1 | Portrait of Phakamon (Mone) Jantrakul | NewPeople/Phakamon (Mone) Jantrakul.jpg |
+| `team-junior-nammon` | `/our-team/` | 1:1 | Portrait of Thitipa (Nammon) Sirikul | NewPeople/Thitipa (Nammon) Sirikul.jpg |
+| `team-junior-third` | `/our-team/` | 1:1 | Portrait of Chutirada (Third) Nilpakdee | NewPeople/Chutirada (Third) Nilpakdee.jpg |
+| `team-junior-pear` | `/our-team/` | 1:1 | Portrait of Praechompoo (Pear) Archapitakkul | NewPeople/Praechompoo (Pear) Archapitakkul.jpg |
+| `team-junior-wern-wern` | `/our-team/` | 1:1 | Portrait of Primasinee (Wern Wern) Sae-Heng | photo sent in chat (Wern Wern) |
+| `team-member-kemjira` | `/our-team/` | 1:1 | Portrait of Kemjira Wawat | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/4 Kemjira Wawat/Kemjira Wawat.jpg |
+| `team-member-khanapot` | `/our-team/` | 1:1 | Portrait of Khanapot Asakit | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Khanapot.jpg |
+| `team-member-patthanan` | `/our-team/` | 1:1 | Portrait of Patthanan (Ouk) Uthaititpitak | 4.Organization/รายชื่อ/Co Founder/05 Patthanan Uthaititpitak/5 Patthanan Uthaititpitak.docx (image inside the document) |
+| `team-member-natprima` | `/our-team/` | 1:1 | Portrait of Natprima Sae-Heng | 4.Organization/รายชื่อ/Co Founder/06 Natprima Sae-Heng/06 Natprima Sae-Heng.jpg |
+| `team-member-prach` | `/our-team/` | 1:1 | Portrait of Prach Mangkhalathanakun | 4.Organization/รายชื่อ/Co Founder/07 Prach Mangkhalathanakun/07  Prach Mangkhalathanakun.jpeg |
+| `team-member-akara` | `/our-team/` | 1:1 | Portrait of Akara Pimmason Hoshina | 4.Organization/รายชื่อ/Executive team/13 Akara Pimmason Hoshina/13 Akara Pimmason Hoshina.jpeg |
+| `team-member-kungfu` | `/our-team/` | 1:1 | Portrait of Archawin (Kungfu) Rattananavathong | NewPeople/Archawin (Kungfu) Rattananavathong.jpg |
+| `team-member-chin` | `/our-team/` | 1:1 | Portrait of Chin Thanatanant | NewPeople/Chin (Chin) Thanatanant.jpg |
+| `team-member-focus` | `/our-team/` | 1:1 | Portrait of Chutikarn (Focus) Suesattabongkoch | 4.Organization/รายชื่อ/Executive team/16 Pakawat Poldetch/16 Chutikarn Suesattabongkoch.jpeg |
+| `team-member-cello` | `/our-team/` | 1:1 | Portrait of Kamolsith (Cello) Qawvasut | 4.Organization/รายชื่อ/Executive team/10 Kamolsith Qawvasut/10 Kamolsith Qawvasut.jpg |
+| `team-member-mano` | `/our-team/` | 1:1 | Portrait of Kantanat (Mano) Chalothornpiset | NewPeople/kantanat (mano) Chalothornpiset.jpg |
+| `team-member-xin` | `/our-team/` | 1:1 | Portrait of Kulisara (Xin) Viriyayodyiem | 4.Organization/รายชื่อ/Executive team/07 Kulisara Viriyayodyiem/07 Kulisara Viriyayodyiem.jpeg |
+| `team-member-near` | `/our-team/` | 1:1 | Portrait of Kunanya (Near) Issarapinyo | 4.Organization/รายชื่อ/Executive team/15 Kunanya Issarapinyo/15 Kunanya Issarapinyo.jpeg |
+| `team-member-paulene` | `/our-team/` | 1:1 | Portrait of Paradee (Paulene) Chalothorn | NewPeople/Paradee (Paulene) Chalothorn.jpg |
+| `team-member-prin` | `/our-team/` | 1:1 | Portrait of Prin Thanatanant | NewPeople/IMG_0980 - Prin (Prin) Thanatanant.jpeg |
+| `team-member-claire` | `/our-team/` | 1:1 | Portrait of Proudnapas (Claire) Upatising | NewPeople/Proudnapas (Claire) Upatising.jpg |
+| `team-member-pryt` | `/our-team/` | 1:1 | Portrait of Prytdanai (Pryt) Pawa | 4.Organization/รายชื่อ/Executive team/14 Prytdanai Pawa/14 prytdanai pawa.jpeg |
+| `team-member-michael` | `/our-team/` | 1:1 | Portrait of Qinhui (Michael) Li | 4.Organization/รายชื่อ/Executive team/19 Qinhui Li/19 Qinhui Li.jpeg |
+| `team-member-sunlee` | `/our-team/` | 1:1 | Portrait of Ratchakrit (Sunlee) Sathiraboot | NewPeople/Ratchakrit (Sunlee) Sathiraboot.webp |
+| `team-member-tasan` | `/our-team/` | 1:1 | Portrait of Sikkha (Tasan) Sinthuchat | 4.Organization/รายชื่อ/Executive team/09 Sikkha Sinthuchat/09 Sikkha Sinthuchat.jpeg |
+| `team-member-sky` | `/our-team/` | 1:1 | Portrait of Sudfah (Sky) Rattanaveroj | 4.Organization/รายชื่อ/Executive team/12 Sudfah Rattanaveroj/12 Sudfah Rattanaveroj.jpeg |
+| `team-member-reina` | `/our-team/` | 1:1 | Portrait of Thanpapatsorn (Reina) Lim | NewPeople/Thanpapatsorn (Reina) Lim.jpg |
+| `team-member-thanus` | `/our-team/` | 1:1 | Portrait of Thanus Prayoonthong | 4.Organization/รายชื่อ/Executive team/11 Thanus Prayoonthong/11 Thanus Prayoonthong.jpeg |
+| `team-member-jeda` | `/our-team/` | 1:1 | Portrait of Xinya Natalie (Jeda) Neui | 4.Organization/รายชื่อ/Executive team/04 Xinya Natalie Neui/Xinya Natalie Neui.jpeg |
+| `team-member-joyce` | `/our-team/` | 1:1 | Portrait of Xinyue (Joyce) Gao | 4.Organization/รายชื่อ/Executive team/03 Xinyue Gao/03 Xinyue Gao.jpeg |
 | `consultant-pornpavit` | `/consultants/` | 1:1 | Portrait of Assoc. Prof. Dr. Pornpavit Sripirom | 7.Consultant/7.Consultant.docx (image inside the document) |
 | `consultant-chaiporn` | `/consultants/` | 1:1 | Portrait of Chaiporn Siramanakul, M.D. | 7.Consultant/7.Consultant.docx (image inside the document) |
 | `consultant-piyachat` | `/consultants/` | 1:1 | Portrait of Piyachat Kosalwat, M.D. | 7.Consultant/7.Consultant.docx (image inside the document) |
@@ -113,9 +119,6 @@ These slots show a gray labeled placeholder until a photo is added.
 | `research-hero` | `/research-innovation/` | 16:9 | MedLink members photograph villagers' skin with phones outside a wooden house in a highland village (hero background, under the dark overlay) | 5.Activity กิจกรรม/2024/Skin AI_Done/IMG_8831.JPG |
 | `research-card-rememocare` | `/research-innovation/` | 3:2 | Two MedLink members receive a prize board on stage under a screen reading KU MedAI Innovation Challenge 2026 | 6.Reserch and Innovation/KU MedAI competion_3rd award/S__32497859.jpg |
 | `research-card-epivascan` | `/research-innovation/` | 3:2 | A MedLink member kneels and photographs a villager's arm with a phone | 5.Activity กิจกรรม/2024/Skin AI Final/IMG_8881.JPG |
-| `rememocare-render` | `/projects/rememocare/` | 3:2 | Two MedLink members present RememoCare on an auditorium stage beside a projected slide | 6.Reserch and Innovation/KU MedAI competion_3rd award/S__32497800_0.jpg |
-| `rememocare-award` | `/projects/rememocare/` | 3:2 | Two MedLink members hold a prize board in front of the KU MedAI Innovation Challenge 2026 backdrop | 6.Reserch and Innovation/KU MedAI competion_3rd award/S__32497926.jpg |
-| `epivascan-render` | `/projects/epivascan/` | 3:2 | A MedLink member photographs the back of a patient's neck with a phone at a village clinic | 5.Activity กิจกรรม/2024/Skin AI_Done/IMG_8713.JPG |
 | `impact-hero` | `/our-impact/` | 16:9 | Patients wait under a tent beside a mobile X-ray truck on an outreach day in Mae Chaem (hero background, under the dark overlay) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0341.JPG |
 | `impact-fundraising-1` | `/our-impact/` | 4:3 | Valentine's gifts and instant noodles at school, 2025 | 5.Activity กิจกรรม/2025/ขายมาม่า+วาเลนไทม์_รายได้ซื้อยา_มค 2025_Final/IMG_3780.JPG |
 | `impact-fundraising-2` | `/our-impact/` | 4:3 | Bangkok Education Fair, March 2025 | 5.Activity กิจกรรม/2025/ฺขายเสื้อBangkok Fair_Final/IMG_3934.JPG |
@@ -169,46 +172,50 @@ Partner, sponsor, and competition logos. "Placeholder" entries show a gray card 
 
 | Page URL | For | Status |
 | --- | --- | --- |
-| `/` | Banphaeo Hospital (organization logo) | Placeholder |
-| `/` | Rajavithi Hospital (organization logo) | Placeholder |
-| `/` | Phyathai Phaholyothin Hospital (organization logo) | Placeholder |
-| `/` | Siriraj Hospital (organization logo) | Placeholder |
-| `/` | Saint Joseph Mae Chaem School (organization logo) | Placeholder |
-| `/` | ASEAN MISST (organization logo) | Placeholder |
-| `/` | ThaiMISST (organization logo) | Placeholder |
-| `/` | MamaCare (organization logo) | Real logo |
-| `/partners/` | Banphaeo Hospital (organization logo) | Placeholder |
-| `/partners/` | [Volunteer medical team name] (organization logo) | Placeholder |
-| `/partners/` | [Pulma partner hospital 1] (organization logo) | Placeholder |
-| `/partners/` | [Pulma partner hospital 2] (organization logo) | Placeholder |
-| `/partners/` | Banphaeo Hospital (organization logo) | Placeholder |
-| `/partners/` | Rajavithi Hospital (organization logo) | Placeholder |
-| `/partners/` | Phyathai Phaholyothin Hospital (organization logo) | Placeholder |
-| `/partners/` | Siriraj Hospital (organization logo) | Placeholder |
-| `/partners/` | [Thermography study hospital 1] (organization logo) | Placeholder |
-| `/partners/` | [Thermography study hospital 2] (organization logo) | Placeholder |
-| `/partners/` | [Thermography study hospital 3] (organization logo) | Placeholder |
-| `/partners/` | Saint Joseph Mae Chaem School (organization logo) | Placeholder |
-| `/partners/` | Ruamrudee International School (RIS) (organization logo) | Real logo |
-| `/partners/` | ASEAN MISST (organization logo) | Placeholder |
-| `/partners/` | ThaiMISST (organization logo) | Placeholder |
-| `/partners/` | MamaCare (Ghana) (organization logo) | Real logo |
+| `/` | Saint Joseph Mae Chaem School (organization logo) | Real logo |
+| `/` | Doi Sisters (organization logo) | Real logo |
+| `/` | MamaCare Ghana (organization logo) | Real logo |
+| `/` | St. Thomas Aquinas Church (organization logo) | Real logo |
+| `/` | Ruamrudee International School (organization logo) | Real logo |
+| `/` | One Hundred Medical (organization logo) | Real logo |
+| `/` | AVA Medical (organization logo) | Real logo |
+| `/` | AN Netech (organization logo) | Real logo |
+| `/` | Quality Extrusion (organization logo) | Real logo |
+| `/` | J2K For Home (organization logo) | Real logo |
+| `/` | Kaizen Products (organization logo) | Real logo |
+| `/` | Ramintra Factory Warehouse (organization logo) | Real logo |
+| `/` | P. Charoen Farm (organization logo) | Real logo |
+| `/` | Interwood Timber (organization logo) | Real logo |
+| `/` | Thanyathip Rice (organization logo) | Real logo |
+| `/` | GGL Trading Co., Ltd. (organization logo) | Real logo |
+| `/` | Saengchan Yanyon Co., Ltd. (organization logo) | Real logo |
+| `/` | Workpoint (organization logo) | Real logo |
+| `/` | TIC Toumi (organization logo) | Real logo |
+| `/` | Teach Tech Co., Ltd. (organization logo) | Real logo |
+| `/` | Tara Aluminium (organization logo) | Real logo |
+| `/` | Somchai Soi 5 (organization logo) | Real logo |
+| `/partners/` | Saint Joseph Mae Chaem School (organization logo) | Real logo |
+| `/partners/` | Doi Sisters (organization logo) | Real logo |
+| `/partners/` | MamaCare Ghana (organization logo) | Real logo |
+| `/partners/` | St. Thomas Aquinas Church (organization logo) | Real logo |
+| `/partners/` | Ruamrudee International School (organization logo) | Real logo |
 | `/partners/` | One Hundred Medical (organization logo) | Real logo |
+| `/partners/` | AVA Medical (organization logo) | Real logo |
+| `/partners/` | AN Netech (organization logo) | Real logo |
 | `/partners/` | Quality Extrusion (organization logo) | Real logo |
 | `/partners/` | J2K For Home (organization logo) | Real logo |
 | `/partners/` | Kaizen Products (organization logo) | Real logo |
 | `/partners/` | Ramintra Factory Warehouse (organization logo) | Real logo |
 | `/partners/` | P. Charoen Farm (organization logo) | Real logo |
+| `/partners/` | Interwood Timber (organization logo) | Real logo |
+| `/partners/` | Thanyathip Rice (organization logo) | Real logo |
+| `/partners/` | GGL Trading Co., Ltd. (organization logo) | Real logo |
+| `/partners/` | Saengchan Yanyon Co., Ltd. (organization logo) | Real logo |
 | `/partners/` | Workpoint (organization logo) | Real logo |
 | `/partners/` | TIC Toumi (organization logo) | Real logo |
 | `/partners/` | Teach Tech Co., Ltd. (organization logo) | Real logo |
 | `/partners/` | Tara Aluminium (organization logo) | Real logo |
 | `/partners/` | Somchai Soi 5 (organization logo) | Real logo |
-| `/projects/pulma/` | iCAN International Invention Innovation Competition (Toronto) (competition logo) | Placeholder |
-| `/projects/pulma/` | TISIAS (Toronto International Society of Innovation & Advanced Skills) (competition logo) | Placeholder |
-| `/projects/pulma/` | HIUF (Highly Innovative and Unique Foundation, Saudi Arabia) (competition logo) | Placeholder |
-| `/projects/telesync/` | Award (competition logo) | Placeholder |
-| `/projects/rememocare/` | Blue Ocean Student Entrepreneur Competition 2026 (competition logo) | Placeholder |
 | `/awards/` | Blue Ocean Student Entrepreneur Competition (competition logo) | Placeholder |
 | `/awards/` | iCAN International Invention Innovation Competition (Toronto) (competition logo) | Placeholder |
 | `/awards/` | TISIAS (Toronto International Society of Innovation & Advanced Skills) (competition logo) | Placeholder |
