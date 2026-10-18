@@ -99,6 +99,18 @@ Notes for special slots:
 
 Before publishing a photo, strip its location data. The photos already on the site were saved without EXIF or GPS data.
 
+## Photo albums
+
+Each event has a photo album: a mosaic on its page and a "See all" button that opens every photo in a full-screen viewer, with arrows, swiping, and thumbnails. Bigger events get bigger mosaics (`album--xl` shows 9 photos, `album--lg` 6, `album--md` 3). The Gallery page has one cover per album, and the homepage, Our Story, Get Involved, and Donate pages have a scrolling strip of photos (`filmstrip`). [PHOTO-SLOTS.md](PHOTO-SLOTS.md) lists every album and where its photos came from.
+
+To add a photo to an album:
+
+1. Save it twice in the album's folder, for example `/assets/images/albums/first-aid/`: once about 1600px on the long side (`21.webp`) and once about 800px (`21-sm.webp`).
+2. In the page's HTML, copy one `<li class="album__item">` line in that album, change the file names, the `width` and `height` (of the small file), and the caption in `data-caption` and `aria-label`.
+3. Update the photo counts: "20 photos" on the first tile and "See all 20 photos" under the mosaic.
+
+The first photo in an album is the big one. The "+N" over the last tile is counted automatically.
+
 ## Text placeholders
 
 Bracketed fields such as `[Name]` or `[Number of patients]` are wrapped in `<span class="placeholder-text">`, which shows them on a pale yellow background. `[CONTENT TO COME: ...]` blocks also have gray lines after them that show roughly how long the final text should be.

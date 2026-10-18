@@ -8,6 +8,13 @@
       "port": 8642
     },
     {
+      "name": "medlink-photo",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8650", "--bind", "127.0.0.1"],
+      "port": 8650,
+      "autoPort": false
+    },
+    {
       "name": "gh-pages-test",
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8643", "--bind", "127.0.0.1", "--directory", "C:\\Users\\Canoo\\AppData\\Local\\Temp\\claude\\C--MedlinkWebsite\\f448d3c7-f00a-4d9c-80ad-0f0bed93321f\\scratchpad\\ghtest"],

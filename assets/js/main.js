@@ -3,7 +3,8 @@
  *
  * Runs after layout.js (both scripts use defer, so the order is kept).
  * Sections: header state, dropdowns, mobile menu, smooth scroll, reveal on
- * scroll, TH/EN switch, gallery filters and lightbox, contact form, copy button.
+ * scroll, TH/EN switch, gallery filters and lightbox, contact form, copy button,
+ * photo albums and the photo viewer.
  */
 (function () {
   'use strict';
@@ -499,4 +500,186 @@
       });
     });
   });
+
+  /* ---------- 10. Photo albums and photo viewer ---------- */
+  var albums = toArray(doc.querySelectorAll('[data-album]'));
+
+  if (albums.length) {
+    var ICON = '<svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">';
+    var viewer = doc.createElement('dialog');
+    viewer.className = 'pv on-dark';
+    viewer.setAttribute('aria-label', 'Photo viewer');
+    viewer.innerHTML =
+      '<div class="pv__layout">' +
+        '<div class="pv__top"><p class="pv__title"></p><p class="pv__counter" aria-live="polite"></p>' +
+        '<button type="button" class="pv__btn pv__close" aria-label="Close photo viewer">' + ICON + '<path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button></div>' +
+        '<div class="pv__stage">' +
+          '<button type="button" class="pv__btn pv__nav pv__nav--prev" aria-label="Previous photo">' + ICON + '<path d="m15 18-6-6 6-6"/></svg></button>' +
+          '<img class="pv__img" alt="">' +
+          '<button type="button" class="pv__btn pv__nav pv__nav--next" aria-label="Next photo">' + ICON + '<path d="m9 18 6-6-6-6"/></svg></button>' +
+        '</div>' +
+        '<p class="pv__caption"></p>' +
+        '<ul class="pv__thumbs" role="list"></ul>' +
+      '</div>';
+    doc.body.appendChild(viewer);
+
+    var pvTitle = viewer.querySelector('.pv__title');
+    var pvCounter = viewer.querySelector('.pv__counter');
+    var pvImg = viewer.querySelector('.pv__img');
+    var pvCaption = viewer.querySelector('.pv__caption');
+    var pvThumbs = viewer.querySelector('.pv__thumbs');
+    var pvItems = [];
+    var pvIndex = 0;
+    var pvOpener = null;
+    var pvOpen = false;
+
+    var albumItems = function (album) {
+      return toArray(album.querySelectorAll('.album__open')).map(function (button) {
+        var img = button.querySelector('img');
+        return {
+          full: button.getAttribute('data-full'),
+          thumb: img.getAttribute('src'),
+          caption: button.getAttribute('data-caption') || '',
+          alt: img.getAttribute('alt') || button.getAttribute('data-caption') || ''
+        };
+      });
+    };
+
+    var showPhoto = function (index) {
+      if (!pvItems.length) return;
+      pvIndex = (index + pvItems.length) % pvItems.length;
+      var item = pvItems[pvIndex];
+      pvImg.classList.add('is-loading');
+      pvImg.onload = function () {
+        pvImg.classList.remove('is-loading');
+      };
+      pvImg.src = item.full;
+      pvImg.alt = item.alt;
+      pvCaption.textContent = item.caption;
+      pvCounter.textContent = (pvIndex + 1) + ' / ' + pvItems.length;
+      toArray(pvThumbs.querySelectorAll('.pv__thumb')).forEach(function (thumb, i) {
+        thumb.setAttribute('aria-current', String(i === pvIndex));
+        if (i === pvIndex && thumb.scrollIntoView) {
+          thumb.scrollIntoView({ block: 'nearest', inline: 'center', behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+        }
+      });
+      // Warm the cache for the next photo
+      var next = new Image();
+      next.src = pvItems[(pvIndex + 1) % pvItems.length].full;
+    };
+
+    var openViewer = function (album, index, opener) {
+      pvItems = albumItems(album);
+      pvOpener = opener;
+      pvTitle.textContent = album.getAttribute('data-title') || '';
+      pvThumbs.innerHTML = '';
+      pvItems.forEach(function (item, i) {
+        var li = doc.createElement('li');
+        var thumb = doc.createElement('button');
+        thumb.type = 'button';
+        thumb.className = 'pv__thumb';
+        thumb.setAttribute('aria-label', 'Photo ' + (i + 1) + ' of ' + pvItems.length);
+        thumb.innerHTML = '<img src="' + item.thumb + '" alt="" loading="lazy" decoding="async">';
+        thumb.addEventListener('click', function () {
+          showPhoto(i);
+        });
+        li.appendChild(thumb);
+        pvThumbs.appendChild(li);
+      });
+      if (typeof viewer.showModal === 'function') viewer.showModal();
+      else viewer.setAttribute('open', '');
+      pvOpen = true;
+      root.classList.add('is-locked');
+      showPhoto(index);
+      viewer.querySelector('.pv__close').focus();
+    };
+
+    var onViewerClosed = function () {
+      if (!pvOpen) return;
+      pvOpen = false;
+      root.classList.remove('is-locked');
+      pvImg.removeAttribute('src');
+      if (pvOpener) pvOpener.focus();
+    };
+
+    var closeViewer = function () {
+      if (typeof viewer.close === 'function') {
+        if (viewer.open) viewer.close();
+      } else {
+        viewer.removeAttribute('open');
+      }
+      onViewerClosed();
+    };
+
+    viewer.addEventListener('cancel', function (event) {
+      event.preventDefault();
+      closeViewer();
+    });
+    viewer.addEventListener('close', onViewerClosed);
+    viewer.querySelector('.pv__close').addEventListener('click', closeViewer);
+    viewer.querySelector('.pv__nav--prev').addEventListener('click', function () {
+      showPhoto(pvIndex - 1);
+    });
+    viewer.querySelector('.pv__nav--next').addEventListener('click', function () {
+      showPhoto(pvIndex + 1);
+    });
+    viewer.addEventListener('click', function (event) {
+      if (event.target.classList.contains('pv__stage')) closeViewer();
+    });
+    viewer.addEventListener('keydown', function (event) {
+      if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        showPhoto(pvIndex + 1);
+      } else if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        showPhoto(pvIndex - 1);
+      } else if (event.key === 'Escape' && typeof viewer.showModal !== 'function') {
+        closeViewer();
+      }
+    });
+
+    // Swipe left and right on touch screens
+    var swipeX = null;
+    var stage = viewer.querySelector('.pv__stage');
+    stage.addEventListener('touchstart', function (event) {
+      swipeX = event.touches[0].clientX;
+    }, { passive: true });
+    stage.addEventListener('touchend', function (event) {
+      if (swipeX === null) return;
+      var dx = event.changedTouches[0].clientX - swipeX;
+      swipeX = null;
+      if (Math.abs(dx) > 40) showPhoto(pvIndex + (dx < 0 ? 1 : -1));
+    });
+
+    // "+12" on the last visible tile, so people know there is more
+    var markMore = function () {
+      albums.forEach(function (album) {
+        if (album.classList.contains('album--cover')) return;
+        var items = toArray(album.querySelectorAll('.album__item'));
+        var shown = items.filter(isVisible);
+        items.forEach(function (item) {
+          item.removeAttribute('data-more');
+        });
+        var hidden = items.length - shown.length;
+        if (hidden > 0 && shown.length) shown[shown.length - 1].setAttribute('data-more', '+' + hidden);
+      });
+    };
+
+    var moreTimer = null;
+    markMore();
+    window.addEventListener('resize', function () {
+      clearTimeout(moreTimer);
+      moreTimer = setTimeout(markMore, 150);
+    });
+
+    albums.forEach(function (album) {
+      var buttons = toArray(album.querySelectorAll('.album__open'));
+      album.addEventListener('click', function (event) {
+        var tile = event.target.closest('.album__open');
+        var all = event.target.closest('.album__all');
+        if (tile) openViewer(album, buttons.indexOf(tile), tile);
+        else if (all) openViewer(album, 0, all);
+      });
+    });
+  }
 })();
