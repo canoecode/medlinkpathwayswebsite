@@ -3428,45 +3428,69 @@ a.logo-tile--img:hover {
   font-weight: var(--fw-regular);
 }
 
-/* Compact team cards: small photo beside the text at every width, so the grids stay short. */
-.team-card {
-  flex-direction: row;
-  align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2);
-}
-
-.team-card > .photo-slot {
-  width: 84px;
-}
-
-.team-card > .photo-slot .photo-slot__box,
-.team-card > .photo-slot > img {
-  border-radius: var(--radius-sm);
-}
-
-.team-card__body {
+/* Founders: centered cards with a large round portrait. */
+.founder-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--gutter-tight);
+  margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-.team-card__name {
-  font-size: 16px;
-  line-height: 22px;
+.founder-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: var(--space-4) var(--space-3) var(--space-3);
+  text-align: center;
+  border-top: 4px solid var(--teal);
 }
 
-.team-card__role {
-  margin-bottom: 4px;
+.founder-card > .photo-slot {
+  width: 168px;
+  max-width: 100%;
+}
+
+.founder-card > .photo-slot .photo-slot__box,
+.founder-card > .photo-slot > img {
+  border-radius: 50%;
+}
+
+.founder-card__name {
+  margin: var(--space-2) 0 var(--space-1);
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.founder-card__role {
+  margin: 0 0 var(--space-2);
+  padding: 2px 12px;
+  border-radius: 999px;
+  background: var(--surface, #eef6f6);
   font-size: 13px;
-  line-height: 18px;
-}
-
-.team-card__bio {
-  font-size: 14px;
   line-height: 20px;
+  font-weight: var(--fw-semibold);
+  color: var(--teal);
 }
 
-@media (min-width: 1200px) {
-  .team-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+.founder-card__quote {
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: italic;
+}
+
+@media (min-width: 600px) {
+  .founder-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--gutter);
+  }
+}
+
+@media (min-width: 1100px) {
+  .founder-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

@@ -37,14 +37,14 @@ These slots show a gray labeled placeholder until a photo is added.
 | `home-founder-quote` | `/` | 1:1 | Portrait of Kundol Tangruthaiwanich (shown as a 96px circle) | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
 | `our-story-hero` | `/our-story/` | 16:9 | A highland valley in Mae Chaem with a small pond and a line of people walking through the grass (hero background, under the dark overlay) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0192.JPG |
 | `our-story-founder-quote` | `/our-story/` | 1:1 | Portrait of Kundol Tangruthaiwanich (shown as a 96px circle) | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
-| `team-founder-kundol` | `/founders/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
-| `team-founder-nuttapat` | `/founders/` | 1:1 | Portrait of Nuttapat (Canon) Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Nuttapat.jpg |
-| `team-founder-kemjira` | `/founders/` | 1:1 | Portrait of Kemjira Wawat | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/4 Kemjira Wawat/Kemjira Wawat.jpg |
-| `team-founder-khanapot` | `/founders/` | 1:1 | Portrait of Khanapot Asakit | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Khanapot.jpg |
-| `team-founder-patthanan` | `/founders/` | 1:1 | Portrait of Patthanan (Ouk) Uthaititpitak | 4.Organization/รายชื่อ/Co Founder/05 Patthanan Uthaititpitak/5 Patthanan Uthaititpitak.docx (image inside the document) |
-| `team-founder-natprima` | `/founders/` | 1:1 | Portrait of Natprima Sae-Heng | 4.Organization/รายชื่อ/Co Founder/06 Natprima Sae-Heng/06 Natprima Sae-Heng.jpg |
-| `team-founder-prach` | `/founders/` | 1:1 | Portrait of Prach Mangkhalathanakun | 4.Organization/รายชื่อ/Co Founder/07 Prach Mangkhalathanakun/07  Prach Mangkhalathanakun.jpeg |
-| `team-founder-wern-wern` | `/founders/` | 1:1 | Portrait of Primasinee (Wern Wern) Sae-Heng | photo sent in chat (Wern Wern) |
+| `founder-kundol` | `/founders/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
+| `founder-nuttapat` | `/founders/` | 1:1 | Portrait of Nuttapat (Canon) Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Nuttapat.jpg |
+| `founder-kemjira` | `/founders/` | 1:1 | Portrait of Kemjira Wawat | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/4 Kemjira Wawat/Kemjira Wawat.jpg |
+| `founder-khanapot` | `/founders/` | 1:1 | Portrait of Khanapot Asakit | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Khanapot.jpg |
+| `founder-patthanan` | `/founders/` | 1:1 | Portrait of Patthanan (Ouk) Uthaititpitak | 4.Organization/รายชื่อ/Co Founder/05 Patthanan Uthaititpitak/5 Patthanan Uthaititpitak.docx (image inside the document) |
+| `founder-natprima` | `/founders/` | 1:1 | Portrait of Natprima Sae-Heng | 4.Organization/รายชื่อ/Co Founder/06 Natprima Sae-Heng/06 Natprima Sae-Heng.jpg |
+| `founder-prach` | `/founders/` | 1:1 | Portrait of Prach Mangkhalathanakun | 4.Organization/รายชื่อ/Co Founder/07 Prach Mangkhalathanakun/07  Prach Mangkhalathanakun.jpeg |
+| `founder-wern-wern` | `/founders/` | 1:1 | Portrait of Primasinee (Wern Wern) Sae-Heng | photo sent in chat (Wern Wern) |
 | `founders-group` | `/founders/` | 3:2 | MedLink co-founders at graduation, August 2026 | 1.History ประวัติ/Co-Founder Medlink .jpg |
 | `team-exec-kundol` | `/our-team/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
 | `team-exec-wanda` | `/our-team/` | 1:1 | Portrait of Weeranda (Wanda) Kiatlertpongsa | 4.Organization/รายชื่อ/Executive team/01 Weeranda Kiatlertpongsa/01 Weeranda Kiatlertpongsa.jpeg |
