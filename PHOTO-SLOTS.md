@@ -33,8 +33,8 @@ These slots show a gray labeled placeholder until a photo is added.
 | `home-community-2` | `/` | 4:3 | Hand-woven highland cloth on sale at the FunFair, February 2025 | 5.Activity กิจกรรม/2025/FunFair 22.02.2025_Final/LINE_ALBUM_ภาพชาวเขาทอผ้า_260114_6.jpg |
 | `home-medical-1` | `/` | 4:3 | Observing surgery at Rajavithi Hospital | 5.Activity กิจกรรม/2025/Shadow ราชวิถี_มค 2025_Final/IMG_9262.JPG |
 | `home-medical-2` | `/` | 4:3 | Registration desk at the 10th ASEAN MISST, February 2025 | 5.Activity กิจกรรม/2025/AseanMisst_Feb 26 2025 complete/LINE_ALBUM_26225_260114_13.jpg |
-| `home-fundraiser` | `/` | 16:9 | Selling instant noodles and Valentine's gifts at school to raise money for medicine, 2025 | 5.Activity กิจกรรม/2025/ขายมาม่า+วาเลนไทม์_รายได้ซื้อยา_มค 2025_Final/S__17285264.jpg |
-| `home-founder-quote` | `/` | 1:1 | Portrait of Kundol Tangruthaiwanich (shown as a 96px circle) | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
+| `home-research-1` | `/` | 4:3 | A MedLink member kneels and photographs a villager's arm with a phone | 5.Activity กิจกรรม/2024/Skin AI Final/IMG_8881.JPG |
+| `home-research-2` | `/` | 4:3 | Two MedLink members receive a prize board on stage under a screen reading KU MedAI Innovation Challenge 2026 | 6.Reserch and Innovation/KU MedAI competion_3rd award/S__32497859.jpg |
 | `our-story-hero` | `/our-story/` | 16:9 | A highland valley in Mae Chaem with a small pond and a line of people walking through the grass (hero background, under the dark overlay) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0192.JPG |
 | `our-story-founder-quote` | `/our-story/` | 1:1 | Portrait of Kundol Tangruthaiwanich (shown as a 96px circle) | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
 | `founder-kundol` | `/founders/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
