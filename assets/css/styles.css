@@ -3427,3 +3427,46 @@ a.logo-tile--img:hover {
   font-size: 14px;
   font-weight: var(--fw-regular);
 }
+
+/* Compact team cards: small photo beside the text at every width, so the grids stay short. */
+.team-card {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2);
+}
+
+.team-card > .photo-slot {
+  width: 84px;
+}
+
+.team-card > .photo-slot .photo-slot__box,
+.team-card > .photo-slot > img {
+  border-radius: var(--radius-sm);
+}
+
+.team-card__body {
+  padding: 0;
+}
+
+.team-card__name {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.team-card__role {
+  margin-bottom: 4px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.team-card__bio {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (min-width: 1200px) {
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

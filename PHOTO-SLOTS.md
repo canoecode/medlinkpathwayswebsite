@@ -1,6 +1,6 @@
 # Photo Slots
 
-The site has **171 photo slots**: **163 hold real photos** and **8 are still placeholders**.
+The site has **172 photo slots**: **164 hold real photos** and **8 are still placeholders**.
 
 Photos live in `/assets/images/` as `.webp` files. To fill or swap a slot, see README.md, "Replacing a photo slot". Search the HTML for `data-slot="<slot-id>"` to find a slot on its page.
 
@@ -37,13 +37,14 @@ These slots show a gray labeled placeholder until a photo is added.
 | `home-founder-quote` | `/` | 1:1 | Portrait of Kundol Tangruthaiwanich (shown as a 96px circle) | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
 | `our-story-hero` | `/our-story/` | 16:9 | A highland valley in Mae Chaem with a small pond and a line of people walking through the grass (hero background, under the dark overlay) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0192.JPG |
 | `our-story-founder-quote` | `/our-story/` | 1:1 | Portrait of Kundol Tangruthaiwanich (shown as a 96px circle) | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
-| `founder-kundol` | `/founders/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
-| `founder-nuttapat` | `/founders/` | 1:1 | Portrait of Nuttapat Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Nuttapat.jpg |
-| `founder-kemjira` | `/founders/` | 1:1 | Portrait of Kemjira Wawat | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/4 Kemjira Wawat/Kemjira Wawat.jpg |
-| `founder-khanapot` | `/founders/` | 1:1 | Portrait of Khanapot Asakit | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Khanapot.jpg |
-| `founder-patthanan` | `/founders/` | 1:1 | Portrait of Patthanan Uthaititpitak | 4.Organization/รายชื่อ/Co Founder/05 Patthanan Uthaititpitak/5 Patthanan Uthaititpitak.docx (image inside the document) |
-| `founder-natprima` | `/founders/` | 1:1 | Portrait of Natprima Sae-Heng | 4.Organization/รายชื่อ/Co Founder/06 Natprima Sae-Heng/06 Natprima Sae-Heng.jpg |
-| `founder-prach` | `/founders/` | 1:1 | Portrait of Prach Mangkhalathanakun | 4.Organization/รายชื่อ/Co Founder/07 Prach Mangkhalathanakun/07  Prach Mangkhalathanakun.jpeg |
+| `team-founder-kundol` | `/founders/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
+| `team-founder-nuttapat` | `/founders/` | 1:1 | Portrait of Nuttapat (Canon) Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Nuttapat.jpg |
+| `team-founder-kemjira` | `/founders/` | 1:1 | Portrait of Kemjira Wawat | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/4 Kemjira Wawat/Kemjira Wawat.jpg |
+| `team-founder-khanapot` | `/founders/` | 1:1 | Portrait of Khanapot Asakit | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Khanapot.jpg |
+| `team-founder-patthanan` | `/founders/` | 1:1 | Portrait of Patthanan (Ouk) Uthaititpitak | 4.Organization/รายชื่อ/Co Founder/05 Patthanan Uthaititpitak/5 Patthanan Uthaititpitak.docx (image inside the document) |
+| `team-founder-natprima` | `/founders/` | 1:1 | Portrait of Natprima Sae-Heng | 4.Organization/รายชื่อ/Co Founder/06 Natprima Sae-Heng/06 Natprima Sae-Heng.jpg |
+| `team-founder-prach` | `/founders/` | 1:1 | Portrait of Prach Mangkhalathanakun | 4.Organization/รายชื่อ/Co Founder/07 Prach Mangkhalathanakun/07  Prach Mangkhalathanakun.jpeg |
+| `team-founder-wern-wern` | `/founders/` | 1:1 | Portrait of Primasinee (Wern Wern) Sae-Heng | photo sent in chat (Wern Wern) |
 | `founders-group` | `/founders/` | 3:2 | MedLink co-founders at graduation, August 2026 | 1.History ประวัติ/Co-Founder Medlink .jpg |
 | `team-exec-kundol` | `/our-team/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
 | `team-exec-wanda` | `/our-team/` | 1:1 | Portrait of Weeranda (Wanda) Kiatlertpongsa | 4.Organization/รายชื่อ/Executive team/01 Weeranda Kiatlertpongsa/01 Weeranda Kiatlertpongsa.jpeg |
@@ -67,6 +68,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-exec-wern-wern` | `/our-team/` | 1:1 | Portrait of Primasinee (Wern Wern) Sae-Heng | photo sent in chat (Wern Wern) |
 | `team-member-exec-kundol` | `/our-team/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
 | `team-member-exec-canon` | `/our-team/` | 1:1 | Portrait of Nuttapat (Canon) Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Nuttapat.jpg |
+| `team-member-exec-wern-wern` | `/our-team/` | 1:1 | Portrait of Primasinee (Wern Wern) Sae-Heng | photo sent in chat (Wern Wern) |
 | `team-member-kemjira` | `/our-team/` | 1:1 | Portrait of Kemjira Wawat | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/4 Kemjira Wawat/Kemjira Wawat.jpg |
 | `team-member-khanapot` | `/our-team/` | 1:1 | Portrait of Khanapot Asakit | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Khanapot.jpg |
 | `team-member-patthanan` | `/our-team/` | 1:1 | Portrait of Patthanan (Ouk) Uthaititpitak | 4.Organization/รายชื่อ/Co Founder/05 Patthanan Uthaititpitak/5 Patthanan Uthaititpitak.docx (image inside the document) |
@@ -89,7 +91,6 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-member-exec-nammon` | `/our-team/` | 1:1 | Portrait of Thitipa (Nammon) Sirikul | NewPeople/Thitipa (Nammon) Sirikul.jpg |
 | `team-member-exec-third` | `/our-team/` | 1:1 | Portrait of Chutirada (Third) Nilpakdee | NewPeople/Chutirada (Third) Nilpakdee.jpg |
 | `team-member-exec-pear` | `/our-team/` | 1:1 | Portrait of Praechompoo (Pear) Archapitakkul | NewPeople/Praechompoo (Pear) Archapitakkul.jpg |
-| `team-member-exec-wern-wern` | `/our-team/` | 1:1 | Portrait of Primasinee (Wern Wern) Sae-Heng | photo sent in chat (Wern Wern) |
 | `team-member-kungfu` | `/our-team/` | 1:1 | Portrait of Archawin (Kungfu) Rattananavathong | NewPeople/Archawin (Kungfu) Rattananavathong.jpg |
 | `team-member-power` | `/our-team/` | 1:1 | Portrait of Chalad (Power) Thaitongsuk | Downloads/Chalad (Power) Thaitongsuk.jpg |
 | `team-member-chin` | `/our-team/` | 1:1 | Portrait of Chin Thanatanant | NewPeople/Chin (Chin) Thanatanant.jpg |
