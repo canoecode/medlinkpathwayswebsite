@@ -1,6 +1,6 @@
 # Photo Slots
 
-The site has **150 photo slots**: **143 hold real photos** and **7 are still placeholders**.
+The site has **171 photo slots**: **163 hold real photos** and **8 are still placeholders**.
 
 Photos live in `/assets/images/` as `.webp` files. To fill or swap a slot, see README.md, "Replacing a photo slot". Search the HTML for `data-slot="<slot-id>"` to find a slot on its page.
 
@@ -11,6 +11,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | Slot ID | Page URL | Ratio | Description |
 | --- | --- | --- | --- |
 | `team-exec-new-new` | `/our-team/` | 1:1 | portrait of Patchareerat (New New) Yangsakunshinnapak |
+| `team-member-exec-new-new` | `/our-team/` | 1:1 | portrait of Patchareerat (New New) Yangsakunshinnapak |
 | `healthcare-cataract-1` | `/healthcare-access/` | 4:3 | a patient after surgery |
 | `research-card-pulma` | `/research-innovation/` | 3:2 | Pulma render |
 | `research-card-telesync` | `/research-innovation/` | 3:2 | TeleSync render |
@@ -64,6 +65,26 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-exec-third` | `/our-team/` | 1:1 | Portrait of Chutirada (Third) Nilpakdee | NewPeople/Chutirada (Third) Nilpakdee.jpg |
 | `team-exec-pear` | `/our-team/` | 1:1 | Portrait of Praechompoo (Pear) Archapitakkul | NewPeople/Praechompoo (Pear) Archapitakkul.jpg |
 | `team-exec-wern-wern` | `/our-team/` | 1:1 | Portrait of Primasinee (Wern Wern) Sae-Heng | photo sent in chat (Wern Wern) |
+| `team-member-exec-kundol` | `/our-team/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
+| `team-member-exec-wanda` | `/our-team/` | 1:1 | Portrait of Weeranda (Wanda) Kiatlertpongsa | 4.Organization/รายชื่อ/Executive team/01 Weeranda Kiatlertpongsa/01 Weeranda Kiatlertpongsa.jpeg |
+| `team-member-exec-prem` | `/our-team/` | 1:1 | Portrait of Akarapat (Prem) Nawatrilap | NewPeople/Akarapat (Prem) Nawatrilap.png |
+| `team-member-exec-kao-wan` | `/our-team/` | 1:1 | Portrait of Thitaree (Kao-Wan) Phunratanamala | 4.Organization/รายชื่อ/Executive team/18 Thitaree Phunratanamala/18 Thitaree Phunratanamala.jpg |
+| `team-member-exec-tiger` | `/our-team/` | 1:1 | Portrait of Junxi (Tiger) Liu | NewPeople/Junxi (Tiger) Liu.webp |
+| `team-member-exec-kira` | `/our-team/` | 1:1 | Portrait of Akira (Kira) Wongwannaraksa | 4.Organization/รายชื่อ/Executive team/02 Akira Wongwannaraksa/02 Akira Wongwannaraksa.jpeg |
+| `team-member-exec-saan` | `/our-team/` | 1:1 | Portrait of Siwat (Saan) Viriyayodyiem | 4.Organization/รายชื่อ/Executive team/17 Siwat Viriyayodyiem/17 Siwat Viriyayodyiem.jpeg |
+| `team-member-exec-atom` | `/our-team/` | 1:1 | Portrait of Akira (Atom) Sirimothya | 4.Organization/รายชื่อ/Executive team/20 Akira Sirimothya/20 Akira Sirimothya.jpeg |
+| `team-member-exec-pan` | `/our-team/` | 1:1 | Portrait of Panboon (Pan) Chantarasupawong | 4.Organization/รายชื่อ/Executive team/06 Panboon Chantarasupawong/06 Panboon Chantarasupawong.jpeg |
+| `team-member-exec-yuta` | `/our-team/` | 1:1 | Portrait of Akara Pimmason (Yuta) Hoshina | Downloads/Akara Pimmason (Yuta) Hoshina.png |
+| `team-member-exec-sean` | `/our-team/` | 1:1 | Portrait of Sanpatna (Sean) A.M. Sophia | Downloads/Sanpatna (Sean) A.M. Sophia.png |
+| `team-member-exec-sandrea` | `/our-team/` | 1:1 | Portrait of Sipatna (Sandrea) A.M. Sophia | Downloads/Sipatna (Sandrea) A.M. Sophia.jpg |
+| `team-member-exec-messi` | `/our-team/` | 1:1 | Portrait of Pakawat (Messi) Poldetch | 4.Organization/รายชื่อ/Executive team/08 Pakawat Poldetch/08 Pakawat Poldetch.jpg |
+| `team-member-exec-ben-j` | `/our-team/` | 1:1 | Portrait of Burich (Ben J) Benjarattananon | 4.Organization/รายชื่อ/Executive team/05 Burich Benjarattananon/05 Burich Benjarattananon.jpg |
+| `team-member-exec-canon` | `/our-team/` | 1:1 | Portrait of Nuttapat (Canon) Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Nuttapat.jpg |
+| `team-member-exec-mone` | `/our-team/` | 1:1 | Portrait of Phakamon (Mone) Jantrakul | NewPeople/Phakamon (Mone) Jantrakul.jpg |
+| `team-member-exec-nammon` | `/our-team/` | 1:1 | Portrait of Thitipa (Nammon) Sirikul | NewPeople/Thitipa (Nammon) Sirikul.jpg |
+| `team-member-exec-third` | `/our-team/` | 1:1 | Portrait of Chutirada (Third) Nilpakdee | NewPeople/Chutirada (Third) Nilpakdee.jpg |
+| `team-member-exec-pear` | `/our-team/` | 1:1 | Portrait of Praechompoo (Pear) Archapitakkul | NewPeople/Praechompoo (Pear) Archapitakkul.jpg |
+| `team-member-exec-wern-wern` | `/our-team/` | 1:1 | Portrait of Primasinee (Wern Wern) Sae-Heng | photo sent in chat (Wern Wern) |
 | `team-member-kemjira` | `/our-team/` | 1:1 | Portrait of Kemjira Wawat | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/4 Kemjira Wawat/Kemjira Wawat.jpg |
 | `team-member-khanapot` | `/our-team/` | 1:1 | Portrait of Khanapot Asakit | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Khanapot.jpg |
 | `team-member-patthanan` | `/our-team/` | 1:1 | Portrait of Patthanan (Ouk) Uthaititpitak | 4.Organization/รายชื่อ/Co Founder/05 Patthanan Uthaititpitak/5 Patthanan Uthaititpitak.docx (image inside the document) |
