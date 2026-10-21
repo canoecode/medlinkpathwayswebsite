@@ -12,7 +12,8 @@ These slots show a gray labeled placeholder until a photo is added.
 | --- | --- | --- | --- |
 | `team-exec-new-new` | `/our-team/` | 1:1 | portrait of Patchareerat (New New) Yangsakunshinnapak |
 | `team-member-exec-new-new` | `/our-team/` | 1:1 | portrait of Patchareerat (New New) Yangsakunshinnapak |
-| `healthcare-cataract-1` | `/healthcare-access/` | 4:3 | a patient after surgery |
+| `healthcare-cataract-1` | `/healthcare-access/` | 3:4 | A volunteer doctor examines a patient's eyes while members observe, February 2026 | photo sent in chat |
+| `healthcare-cataract-2` | `/healthcare-access/` | 4:3 | Patients wait under the clinic tent beside the cataract screening stations, February 2026 | photo sent in chat |
 | `research-card-pulma` | `/research-innovation/` | 3:2 | Pulma render |
 | `research-card-telesync` | `/research-innovation/` | 3:2 | TeleSync render |
 | `research-card-thermography` | `/research-innovation/` | 3:2 | Thermography Study render |
