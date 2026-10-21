@@ -1996,26 +1996,6 @@ a.logo-tile:hover {
   padding-bottom: 0;
 }
 
-/* Two photos side by side at the same height (width follows each photo's shape). */
-.photo-pair {
-  display: grid;
-  gap: var(--space-4);
-  margin-top: var(--space-5, 24px);
-}
-
-.photo-pair > * {
-  margin: 0;
-  min-width: 0;
-}
-
-@media (min-width: 720px) {
-  .photo-pair {
-    grid-template-columns: 0.75fr 1.3333fr;
-    max-width: 880px;
-    align-items: start;
-  }
-}
-
 .activity__title {
   margin-bottom: 12px;
 }
@@ -3715,6 +3695,17 @@ a.logo-tile--img:hover {
   .album--xl .album__item:nth-child(n+10),
   .album--lg .album__item:nth-child(n+7) {
     display: none;
+  }
+
+  /* md with only two photos: tall photo plus a wide one, same height */
+  .album--md .album__item:first-child:nth-last-child(2) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .album--md .album__item:last-child:nth-child(2) {
+    grid-column: span 2;
+    grid-row: span 2;
   }
 
   /* xl: 4 x 4 bento */
