@@ -40,8 +40,8 @@
   ];
 
   var CONTACT = {
-    email: '[Organization email]',
-    phone: '[Phone]',
+    email: 'medlinkpathways@gmail.com',
+    phone: '+66 62 215 7772',
     social: [
       { label: 'Instagram', href: '#', icon: 'instagram' },
       { label: 'LinkedIn', href: '#', icon: 'linkedin' },
@@ -203,8 +203,8 @@
           '<div class="site-footer__col">' +
             '<h2 class="site-footer__heading">Contact</h2>' +
             '<ul class="site-footer__contact">' +
-              '<li>' + icon('mail', 20) + '<span>' + text(CONTACT.email) + '</span></li>' +
-              '<li>' + icon('phone', 20) + '<span>' + text(CONTACT.phone) + '</span></li>' +
+              '<li>' + icon('mail', 20) + '<span><a href="mailto:' + esc(CONTACT.email) + '">' + text(CONTACT.email) + '</a></span></li>' +
+              '<li>' + icon('phone', 20) + '<span><a href="tel:' + esc(CONTACT.phone.replace(/\s/g, '')) + '">' + text(CONTACT.phone) + '</a></span></li>' +
             '</ul>' +
             '<ul class="site-footer__social">' +
               CONTACT.social.map(function (s) {

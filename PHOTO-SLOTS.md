@@ -17,7 +17,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | `research-card-telesync` | `/research-innovation/` | 3:2 | TeleSync render |
 | `research-card-thermography` | `/research-innovation/` | 3:2 | Thermography Study render |
 | `timeline-2027` | `/timeline/` | 4:3 | What's Next highlight |
-| `donate-promptpay-qr` | `/donate/` | 1:1 | PromptPay QR code (shown at 200px wide) |
+| `donate-promptpay-qr` | `/donate/` | 1:1 | PromptPay QR code (shown at 200px wide) — filled |
 
 ## Filled
 
