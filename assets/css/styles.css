@@ -4314,3 +4314,131 @@ a.logo-tile--img:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(12, 18, 28, 0.2);
 }
+
+/* Team: the President stands alone above the executive grid, in a soft feature panel */
+.exec-lead {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+  margin: 0 0 var(--space-5);
+  padding: var(--space-5) var(--space-3);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, var(--white) 0%, var(--surface) 100%);
+  box-shadow: 0 10px 30px -18px var(--shadow);
+  color: var(--text);
+  text-align: center;
+}
+
+/* Soft rings behind the portrait */
+.exec-lead::before,
+.exec-lead::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.exec-lead::before {
+  width: 420px;
+  height: 420px;
+  top: -190px;
+  left: 50%;
+  margin-left: -210px;
+  background: radial-gradient(circle, var(--teal-tint), rgba(11, 122, 128, 0) 70%);
+}
+
+.exec-lead::after {
+  width: 260px;
+  height: 260px;
+  right: -90px;
+  bottom: -120px;
+  border: 1px solid var(--teal-tint);
+}
+
+.exec-lead__photo {
+  width: 168px;
+  padding: 6px;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: 0 0 0 1px var(--border), 0 8px 20px -8px var(--shadow);
+}
+
+.exec-lead__body {
+  max-width: 560px;
+}
+
+.exec-lead__role {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 4px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--teal-tint);
+  color: var(--teal-dark);
+  font-size: var(--fs-small);
+  line-height: 20px;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.exec-lead__name {
+  margin: 0;
+  font-size: 28px;
+  line-height: 36px;
+  color: var(--deep-blue);
+  overflow-wrap: break-word;
+}
+
+.exec-lead__quote {
+  position: relative;
+  margin: var(--space-2) 0 0;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--border);
+}
+
+.exec-lead__quote p {
+  margin: 0;
+  font-size: var(--fs-lead);
+  line-height: var(--lh-lead);
+  font-style: italic;
+  color: var(--muted);
+}
+
+.exec-lead__quote p::before {
+  content: "\201C";
+}
+
+.exec-lead__quote p::after {
+  content: "\201D";
+}
+
+@media (min-width: 720px) {
+  .exec-lead {
+    grid-template-columns: auto minmax(0, 1fr);
+    justify-items: start;
+    align-items: center;
+    gap: var(--space-5);
+    padding: var(--space-5) var(--space-6);
+    text-align: left;
+  }
+
+  .exec-lead::before {
+    top: 50%;
+    left: -60px;
+    margin: -210px 0 0;
+  }
+
+  .exec-lead__photo {
+    width: 200px;
+  }
+
+  .exec-lead__name {
+    font-size: 34px;
+    line-height: 42px;
+  }
+}
