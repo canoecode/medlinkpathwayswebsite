@@ -1,6 +1,6 @@
 # Photo Slots
 
-The site has **172 photo slots**: **164 hold real photos** and **8 are still placeholders**.
+The site has **183 photo slots**: **176 hold real photos** and **7 are still placeholders**.
 
 Photos live in `/assets/images/` as `.webp` files. To fill or swap a slot, see README.md, "Replacing a photo slot". Search the HTML for `data-slot="<slot-id>"` to find a slot on its page.
 
@@ -14,7 +14,6 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-member-exec-new-new` | `/our-team/` | 1:1 | portrait of Patchareerat (New New) Yangsakunshinnapak |
 | `cataract` album | `/healthcare-access/` | album | Cataract program: eye exam (3:4) and patients waiting under the tent (4:3), February 2026. Files in `/assets/images/albums/cataract/` | photos sent in chat |
 | `research-card-pulma` | `/research-innovation/` | 3:2 | Pulma render |
-| `research-card-telesync` | `/research-innovation/` | 3:2 | TeleSync render |
 | `research-card-thermography` | `/research-innovation/` | 3:2 | Thermography Study render |
 | `timeline-2027` | `/timeline/` | 4:3 | What's Next highlight |
 | `donate-promptpay-qr` | `/donate/` | 1:1 | PromptPay QR code (shown at 200px wide) — filled |
@@ -143,6 +142,9 @@ These slots show a gray labeled placeholder until a photo is added.
 | `research-hero` | `/research-innovation/` | 16:9 | MedLink members photograph villagers' skin with phones outside a wooden house in a highland village (hero background, under the dark overlay) | 5.Activity กิจกรรม/2024/Skin AI_Done/IMG_8831.JPG |
 | `research-card-rememocare` | `/research-innovation/` | 3:2 | Two MedLink members receive a prize board on stage under a screen reading KU MedAI Innovation Challenge 2026 | 6.Reserch and Innovation/KU MedAI competion_3rd award/S__32497859.jpg |
 | `research-card-epivascan` | `/research-innovation/` | 3:2 | A MedLink member kneels and photographs a villager's arm with a phone | 5.Activity กิจกรรม/2024/Skin AI Final/IMG_8881.JPG |
+| `research-card-oradent` | `/research-innovation/` | 3:2 | A MedLink member holds a winner's board for INNOVISION Young Gen with Bosch 2026 under the UN emblem | BenJProjectsandAchievements.zip: Medlink website photo/Activity 2 (Bosch)/Picture 2 (Bosch).png |
+| `research-card-nematode` | `/research-innovation/` | 3:2 | A MedLink member walks through the crowd at the ISEF 2025 Grand Awards Ceremony | BenJProjectsandAchievements.zip: Medlink website photo/Activity 1 (ISEF)/Picture 1 (ISEF).png |
+| `research-card-telesync` | `/research-innovation/` | 3:2 | The iCAN 2026 Jury's Choice Award trophy beside the TeleSync device | photo sent in chat (same photo as `awards-ican-jurys-choice`) |
 | `impact-hero` | `/our-impact/` | 16:9 | Patients wait under a tent beside a mobile X-ray truck on an outreach day in Mae Chaem (hero background, under the dark overlay) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0341.JPG |
 | `impact-fundraising-1` | `/our-impact/` | 4:3 | Valentine's gifts and instant noodles at school, 2025 | 5.Activity กิจกรรม/2025/ขายมาม่า+วาเลนไทม์_รายได้ซื้อยา_มค 2025_Final/IMG_3780.JPG |
 | `impact-fundraising-2` | `/our-impact/` | 4:3 | Bangkok Education Fair, March 2025 | 5.Activity กิจกรรม/2025/ฺขายเสื้อBangkok Fair_Final/IMG_3934.JPG |
@@ -152,6 +154,15 @@ These slots show a gray labeled placeholder until a photo is added.
 | `timeline-2025` | `/timeline/` | 4:3 | A large group of MedLink members in school uniform pose on a lawn at the 10th ASEAN MISST conference | 5.Activity กิจกรรม/2025/AseanMIsst ขายเสื้อ_Final/IMG_3469.JPG |
 | `timeline-2026` | `/timeline/` | 4:3 | MedLink members and villagers gather behind rows of supply bags in front of a wooden chapel | 5.Activity กิจกรรม/2026/ขึ้นดอย_20-22 Feb2026/ภาพรวม/S__13238290_0.jpg |
 | `awards-ku-medai` | `/awards/` | 3:2 | Two MedLink members receive a prize board on stage under a screen reading KU MedAI Innovation Challenge 2026 | 6.Reserch and Innovation/KU MedAI competion_3rd award/S__32497859.jpg |
+| `awards-bosch-innovision` | `/awards/` | 3:2 | A MedLink member holds a winner's board for INNOVISION Young Gen with Bosch 2026 under the UN emblem | BenJProjectsandAchievements.zip: Medlink website photo/Activity 2 (Bosch)/Picture 2 (Bosch).png |
+| `awards-isef` | `/awards/` | 3:2 | A MedLink member wearing the Thai flag holds up an ISEF 2025 medal | BenJProjectsandAchievements.zip: Medlink website photo/Activity 1 (ISEF)/Picture 2 (ISEF).png |
+| `awards-blue-ocean` | `/awards/` | 3:2 | Blue Ocean Certificate of Achievement, Top 100 Finalist, 2026 (the certificate image from the PDF, cropped to 3:2, with the PDF's name and date lines redrawn on it) | Downloads/blueoceancert.pdf |
+| `awards-ican-jurys-choice` | `/awards/` | 3:2 | The iCAN 2026 Jury's Choice Award trophy beside the TeleSync device | photo sent in chat |
+| `awards-ican-gold-pulma` | `/awards/` | 3:2 | iCAN 2026 Gold Medal certificate for Pulma (the whole certificate on a blurred copy of itself, 3:2) | icanawards.zip: 145375/No.1 - Gold Medal Certificate.jpg |
+| `awards-ican-tisias` | `/awards/` | 3:2 | TISIAS Special Award certificate for Pulma (the whole certificate on a blurred copy of itself, 3:2) | icanawards.zip: 145375/No.1 - TISIAS Special Award Certificate.jpg |
+| `awards-ican-hiuf` | `/awards/` | 3:2 | HIUF Great Special Award certificate for Pulma (the whole certificate on a blurred copy of itself, 3:2) | icanawards.zip: 145375/No.1 - HIUF Special Award Certificate (only).jpg |
+| `awards-ican-excellence` | `/awards/` | 3:2 | iCAN 2026 Certificate of Excellence for TeleSync (the whole certificate on a blurred copy of itself, 3:2) | icanawards.zip: 145375/No.2 - Excellence Certificate (only).jpg |
+| `awards-prakaipetch` | `/awards/` | 3:2 | A MedLink member receives a certificate at the Outstanding Youth of Bangkok (Prakaipetch) ceremony, August 2026 | BenJProjectsandAchievements.zip: Medlink website photo/Activity 5 (Prakaipetch) /Picture 1 (Prakaipetch).jpg |
 | `gallery-01` | `/gallery/` | 4:3 | Registration desk at the 17th ThaiMISST, September 2026 (Medical Exploration, 2026) | 5.Activity กิจกรรม/2026/ThaisMisst_23-26 Sep 2026 complete/ThaiMisst 23Sep2026 complete/IMG_3720.jpg |
 | `gallery-02` | `/gallery/` | 4:3 | Shadowing at Siriraj Hospital, June 2026 (Medical Exploration, 2026) | 5.Activity กิจกรรม/2026/Shadow_Siriraj complete/IMG_0547.JPG |
 | `gallery-03` | `/gallery/` | 4:3 | Community health education run by MamaCare Ghana with MedLink's support, Oti Region, May 2026 (Healthcare Access, 2026) | Ghana/Copy of IMG_0338.JPG |
@@ -269,7 +280,10 @@ The albums replace these 31 single-photo slots, which are no longer on any page.
 | `fundraising` | Fundraisers | /our-impact/ | xl | 18 | 5.Activity กิจกรรม/2025/AseanMIsst ขายเสื้อ_Final<br>5.Activity กิจกรรม/2025/FunFair 22.02.2025_Final<br>5.Activity กิจกรรม/2025/Gala Dinner ขายเสื้อช้าวเข้าและเล่นดนตรี_Final<br>5.Activity กิจกรรม/2025/ขายมาม่า+วาเลนไทม์_รายได้ซื้อยา_มค 2025_Final<br>5.Activity กิจกรรม/2025/ฺขายเสื้อBangkok Fair_Final<br>5.Activity กิจกรรม/2026/ขึ้นดอย_20-22 Feb2026/ขายเสื้อหน้าโบสถ์ |
 | `ghana` | MamaCare Ghana | /our-impact/ | md | 5 | Ghana |
 | `skin-ai` | Skin AI Screening | /research-innovation/ | md | 6 | 5.Activity กิจกรรม/2024/Skin AI Final<br>5.Activity กิจกรรม/2024/Skin AI_Done |
-| `ku-medai` | KU MedAI Innovation Challenge | /research-innovation/, /awards/ | md | 6 | 6.Reserch and Innovation/KU MedAI competion_3rd award |
+| `ku-medai` | KU MedAI Innovation Challenge | /research-innovation/, /gallery/ | md | 6 | 6.Reserch and Innovation/KU MedAI competion_3rd award |
+| `bosch-innovision` | INNOVISION Young Gen with Bosch | /research-innovation/ | md | 6 | BenJProjectsandAchievements.zip: Medlink website photo/Activity 2 (Bosch), Activity 3 (UNCC), Activity 4 (GCNT) |
+| `isef-2025` | Regeneron ISEF 2025 | /research-innovation/ | md | 3 | BenJProjectsandAchievements.zip: Medlink website photo/Activity 1 (ISEF) |
+| `ican-2026` | iCAN 2026: The Finals | /gallery/ | md | 8 | icanawards.zip (145375/): the Jury's Choice plaque, and the Pulma and TeleSync certificates; the trophy-and-TeleSync photo was sent in chat |
 | `trip-2024` | First Trip to Mae Chaem | /timeline/, /our-story/ | md | 10 | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024 |
 | `trip-2025` | Mae Chaem Trip 2025 | /timeline/ | md | 10 | 5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/28Feb2025_กล้องยุ้ย_กลางคืน<br>5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/28Feb2025_งานขอบคุณ กลางคืน complete<br>5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/28Feb2025_เย็น_Day2<br>5.Activity กิจกรรม/2025/ขึ้นดอย 26-28 Feb,2025 complete/กล้องคุณนก |
 | `trip-2026` | Mae Chaem Trip 2026 | /timeline/ | md | 10 | 5.Activity กิจกรรม/2026/ขึ้นดอย_20-22 Feb2026/กล้องคุณลี่<br>5.Activity กิจกรรม/2026/ขึ้นดอย_20-22 Feb2026/ขึ้นดอยพิธีขอบคุณ<br>5.Activity กิจกรรม/2026/ขึ้นดอย_20-22 Feb2026/ภาพรวม |

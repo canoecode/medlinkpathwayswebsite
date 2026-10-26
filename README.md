@@ -33,7 +33,7 @@ Any static host works for deployment. On Netlify, `_redirects` is picked up auto
 ├── research-innovation/
 ├── projects/
 │   ├── pulma/ telesync/ rememocare/ epivascan/ thermography/
-├── our-impact/ timeline/ awards/ gallery/
+├── our-impact/ timeline/ awards/ patents/ gallery/
 ├── get-involved/ donate/
 ├── assets/
 │   ├── css/styles.css            The one stylesheet. Design tokens are on :root.

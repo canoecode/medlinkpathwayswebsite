@@ -30,6 +30,7 @@
     { label: 'Impact at a Glance', href: '/our-impact/' },
     { label: 'Timeline', href: '/timeline/' },
     { label: 'Awards', href: '/awards/' },
+    { label: 'Patents', href: '/patents/' },
     { label: 'Gallery', href: '/gallery/' }
   ];
 
