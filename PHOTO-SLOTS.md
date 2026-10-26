@@ -46,7 +46,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | `founder-wern-wern` | `/founders/` | 1:1 | Portrait of Primasinee (Wern Wern) Sae-Heng | photo sent in chat (Wern Wern) |
 | `founders-group` | `/founders/` | 3:2 | MedLink co-founders at graduation, August 2026 | 1.History ประวัติ/Co-Founder Medlink .jpg |
 | `team-exec-kundol` | `/our-team/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
-| `team-exec-wanda` | `/our-team/` | 1:1 | Portrait of Weeranda (Wanda) Kiatlertpongsa | 4.Organization/รายชื่อ/Executive team/01 Weeranda Kiatlertpongsa/01 Weeranda Kiatlertpongsa.jpeg |
+| `team-exec-wanda` | `/our-team/` | 1:1 | Portrait of Weeranda (Wanda) Kiatlertpongsa | photo sent in chat (Wanda) |
 | `team-exec-prem` | `/our-team/` | 1:1 | Portrait of Akarapat (Prem) Nawatrilap | NewPeople/Akarapat (Prem) Nawatrilap.png |
 | `team-exec-kao-wan` | `/our-team/` | 1:1 | Portrait of Thitaree (Kao-Wan) Phunratanamala | 4.Organization/รายชื่อ/Executive team/18 Thitaree Phunratanamala/18 Thitaree Phunratanamala.jpg |
 | `team-exec-tiger` | `/our-team/` | 1:1 | Portrait of Junxi (Tiger) Liu | NewPeople/Junxi (Tiger) Liu.webp |
@@ -73,7 +73,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-member-patthanan` | `/our-team/` | 1:1 | Portrait of Patthanan (Ouk) Uthaititpitak | 4.Organization/รายชื่อ/Co Founder/05 Patthanan Uthaititpitak/5 Patthanan Uthaititpitak.docx (image inside the document) |
 | `team-member-natprima` | `/our-team/` | 1:1 | Portrait of Natprima Sae-Heng | 4.Organization/รายชื่อ/Co Founder/06 Natprima Sae-Heng/06 Natprima Sae-Heng.jpg |
 | `team-member-prach` | `/our-team/` | 1:1 | Portrait of Prach Mangkhalathanakun | 4.Organization/รายชื่อ/Co Founder/07 Prach Mangkhalathanakun/07  Prach Mangkhalathanakun.jpeg |
-| `team-member-exec-wanda` | `/our-team/` | 1:1 | Portrait of Weeranda (Wanda) Kiatlertpongsa | 4.Organization/รายชื่อ/Executive team/01 Weeranda Kiatlertpongsa/01 Weeranda Kiatlertpongsa.jpeg |
+| `team-member-exec-wanda` | `/our-team/` | 1:1 | Portrait of Weeranda (Wanda) Kiatlertpongsa | photo sent in chat (Wanda) |
 | `team-member-exec-prem` | `/our-team/` | 1:1 | Portrait of Akarapat (Prem) Nawatrilap | NewPeople/Akarapat (Prem) Nawatrilap.png |
 | `team-member-exec-kao-wan` | `/our-team/` | 1:1 | Portrait of Thitaree (Kao-Wan) Phunratanamala | 4.Organization/รายชื่อ/Executive team/18 Thitaree Phunratanamala/18 Thitaree Phunratanamala.jpg |
 | `team-member-exec-tiger` | `/our-team/` | 1:1 | Portrait of Junxi (Tiger) Liu | NewPeople/Junxi (Tiger) Liu.webp |
@@ -117,6 +117,8 @@ These slots show a gray labeled placeholder until a photo is added.
 | `consultant-piyachat` | `/consultants/` | 1:1 | Portrait of Piyachat Kosalwat, M.D. | 7.Consultant/7.Consultant.docx (image inside the document) |
 | `consultant-wongthawat` | `/consultants/` | 1:1 | Portrait of Asst. Prof. Dr. Wongthawat Liawrungrueang | 7.Consultant/7.1Consultant Medlink.docx (image inside the document) |
 | `consultant-thitikan` | `/consultants/` | 1:1 | Portrait of Dr. Thitikan Wangapakul, M.D. | 7.Consultant/7.1Consultant Medlink.docx (image inside the document) |
+| `consultant-anuchit` | `/consultants/` | 1:1 | Portrait of Dr. Anuchit Vejchaichewa | Photo sent by Kundol in chat |
+| `consultant-kasidit` | `/consultants/` | 1:1 | Portrait of Dr. Kasidit Srichongchai | Photo sent by Kundol in chat |
 | `consultant-choladawan` | `/consultants/` | 1:1 | Portrait of Choladawan Moonjaita | 7.Consultant/7.1Consultant Medlink.docx (image inside the document) |
 | `healthcare-hero` | `/healthcare-access/` | 16:9 | A volunteer doctor in a mask sits at a desk talking with a patient in traditional highland dress (hero background, under the dark overlay) | 5.Activity กิจกรรม/2024/ขึ้นดอย 1-3Feb2024/IMG_0362.JPG |
 | `healthcare-outreach-1` | `/healthcare-access/` | 4:3 | Members observe a volunteer doctor at the Mae Chaem clinic, February 2026 | 5.Activity กิจกรรม/2026/ขึ้นดอย 20-22 Feb 2026 complete/ขึ้นดอย21Feb2025 ตรวจคนไข้ complete/IMG_7388.JPG |
