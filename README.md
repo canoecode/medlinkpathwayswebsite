@@ -46,7 +46,7 @@ Any static host works for deployment. On Netlify, `_redirects` is picked up auto
 ├── scripts/check-links.mjs       Link checker (see below)
 ├── _redirects                    Old URLs to new pages (Netlify format, 301)
 ├── robots.txt
-├── sitemap.xml                   All 21 URLs on https://www.medlinkpathways.com
+├── sitemap.xml                   All 21 URLs on https://medlinkpathways.com
 ├── PHOTO-SLOTS.md                Every photo slot: ID, page, ratio, what it shows
 └── README.md
 ```
