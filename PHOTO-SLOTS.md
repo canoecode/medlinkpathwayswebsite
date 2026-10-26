@@ -52,7 +52,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-exec-tiger` | `/our-team/` | 1:1 | Portrait of Junxi (Tiger) Liu | NewPeople/Junxi (Tiger) Liu.webp |
 | `team-exec-kira` | `/our-team/` | 1:1 | Portrait of Akira (Kira) Wongwannaraksa | 4.Organization/รายชื่อ/Executive team/02 Akira Wongwannaraksa/02 Akira Wongwannaraksa.jpeg |
 | `team-exec-saan` | `/our-team/` | 1:1 | Portrait of Siwat (Saan) Viriyayodyiem | 4.Organization/รายชื่อ/Executive team/17 Siwat Viriyayodyiem/17 Siwat Viriyayodyiem.jpeg |
-| `team-exec-atom` | `/our-team/` | 1:1 | Portrait of Akira (Atom) Sirimothya | 4.Organization/รายชื่อ/Executive team/20 Akira Sirimothya/20 Akira Sirimothya.jpeg |
+| `team-exec-atom` | `/our-team/` | 1:1 | Portrait of Akira (Atom) Sirimothya | photo sent in chat, 2026-10-26 |
 | `team-exec-pan` | `/our-team/` | 1:1 | Portrait of Panboon (Pan) Chantarasupawong | 4.Organization/รายชื่อ/Executive team/06 Panboon Chantarasupawong/06 Panboon Chantarasupawong.jpeg |
 | `team-exec-yuta` | `/our-team/` | 1:1 | Portrait of Akara Pimmason (Yuta) Hoshina | Downloads/Akara Pimmason (Yuta) Hoshina.png |
 | `team-exec-sean` | `/our-team/` | 1:1 | Portrait of Sanpatna (Sean) A.M. Sophia | Downloads/Sanpatna (Sean) A.M. Sophia.png |
@@ -61,7 +61,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-exec-ben-j` | `/our-team/` | 1:1 | Portrait of Burich (Ben J) Benjarattananon | 4.Organization/รายชื่อ/Executive team/05 Burich Benjarattananon/05 Burich Benjarattananon.jpg |
 | `team-exec-canon` | `/our-team/` | 1:1 | Portrait of Nuttapat (Canon) Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/Nuttapat.jpg |
 | `team-exec-mone` | `/our-team/` | 1:1 | Portrait of Phakamon (Mone) Jantrakul | NewPeople/Phakamon (Mone) Jantrakul.jpg |
-| `team-exec-nammon` | `/our-team/` | 1:1 | Portrait of Thitipa (Nammon) Sirikul | NewPeople/Thitipa (Nammon) Sirikul.jpg |
+| `team-exec-nammon` | `/our-team/` | 1:1 | Portrait of Thitipa (Nammon) Sirikul | photo sent in chat, 2026-10-26 |
 | `team-exec-third` | `/our-team/` | 1:1 | Portrait of Chutirada (Third) Nilpakdee | NewPeople/Chutirada (Third) Nilpakdee.jpg |
 | `team-exec-pear` | `/our-team/` | 1:1 | Portrait of Praechompoo (Pear) Archapitakkul | NewPeople/Praechompoo (Pear) Archapitakkul.jpg |
 | `team-exec-wern-wern` | `/our-team/` | 1:1 | Portrait of Primasinee (Wern Wern) Sae-Heng | photo sent in chat (Wern Wern) |
@@ -79,7 +79,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-member-exec-tiger` | `/our-team/` | 1:1 | Portrait of Junxi (Tiger) Liu | NewPeople/Junxi (Tiger) Liu.webp |
 | `team-member-exec-kira` | `/our-team/` | 1:1 | Portrait of Akira (Kira) Wongwannaraksa | 4.Organization/รายชื่อ/Executive team/02 Akira Wongwannaraksa/02 Akira Wongwannaraksa.jpeg |
 | `team-member-exec-saan` | `/our-team/` | 1:1 | Portrait of Siwat (Saan) Viriyayodyiem | 4.Organization/รายชื่อ/Executive team/17 Siwat Viriyayodyiem/17 Siwat Viriyayodyiem.jpeg |
-| `team-member-exec-atom` | `/our-team/` | 1:1 | Portrait of Akira (Atom) Sirimothya | 4.Organization/รายชื่อ/Executive team/20 Akira Sirimothya/20 Akira Sirimothya.jpeg |
+| `team-member-exec-atom` | `/our-team/` | 1:1 | Portrait of Akira (Atom) Sirimothya | photo sent in chat, 2026-10-26 |
 | `team-member-exec-pan` | `/our-team/` | 1:1 | Portrait of Panboon (Pan) Chantarasupawong | 4.Organization/รายชื่อ/Executive team/06 Panboon Chantarasupawong/06 Panboon Chantarasupawong.jpeg |
 | `team-member-exec-yuta` | `/our-team/` | 1:1 | Portrait of Akara Pimmason (Yuta) Hoshina | Downloads/Akara Pimmason (Yuta) Hoshina.png |
 | `team-member-exec-sean` | `/our-team/` | 1:1 | Portrait of Sanpatna (Sean) A.M. Sophia | Downloads/Sanpatna (Sean) A.M. Sophia.png |
@@ -87,7 +87,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-member-exec-messi` | `/our-team/` | 1:1 | Portrait of Pakawat (Messi) Poldetch | 4.Organization/รายชื่อ/Executive team/08 Pakawat Poldetch/08 Pakawat Poldetch.jpg |
 | `team-member-exec-ben-j` | `/our-team/` | 1:1 | Portrait of Burich (Ben J) Benjarattananon | 4.Organization/รายชื่อ/Executive team/05 Burich Benjarattananon/05 Burich Benjarattananon.jpg |
 | `team-member-exec-mone` | `/our-team/` | 1:1 | Portrait of Phakamon (Mone) Jantrakul | NewPeople/Phakamon (Mone) Jantrakul.jpg |
-| `team-member-exec-nammon` | `/our-team/` | 1:1 | Portrait of Thitipa (Nammon) Sirikul | NewPeople/Thitipa (Nammon) Sirikul.jpg |
+| `team-member-exec-nammon` | `/our-team/` | 1:1 | Portrait of Thitipa (Nammon) Sirikul | photo sent in chat, 2026-10-26 |
 | `team-member-exec-third` | `/our-team/` | 1:1 | Portrait of Chutirada (Third) Nilpakdee | NewPeople/Chutirada (Third) Nilpakdee.jpg |
 | `team-member-exec-pear` | `/our-team/` | 1:1 | Portrait of Praechompoo (Pear) Archapitakkul | NewPeople/Praechompoo (Pear) Archapitakkul.jpg |
 | `team-member-kungfu` | `/our-team/` | 1:1 | Portrait of Archawin (Kungfu) Rattananavathong | NewPeople/Archawin (Kungfu) Rattananavathong.jpg |
