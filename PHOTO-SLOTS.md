@@ -1,6 +1,6 @@
 # Photo Slots
 
-The site has **183 photo slots**: **176 hold real photos** and **7 are still placeholders**.
+The site has **184 photo slots**: **177 hold real photos** and **7 are still placeholders**.
 
 Photos live in `/assets/images/` as `.webp` files. To fill or swap a slot, see README.md, "Replacing a photo slot". Search the HTML for `data-slot="<slot-id>"` to find a slot on its page.
 
@@ -112,6 +112,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-member-thanus` | `/our-team/` | 1:1 | Portrait of Thanus Prayoonthong | 4.Organization/รายชื่อ/Executive team/11 Thanus Prayoonthong/11 Thanus Prayoonthong.jpeg |
 | `team-member-jeda` | `/our-team/` | 1:1 | Portrait of Xinya Natalie (Jeda) Neui | 4.Organization/รายชื่อ/Executive team/04 Xinya Natalie Neui/Xinya Natalie Neui.jpeg |
 | `team-member-joyce` | `/our-team/` | 1:1 | Portrait of Xinyue (Joyce) Gao | 4.Organization/รายชื่อ/Executive team/03 Xinyue Gao/03 Xinyue Gao.jpeg |
+| `team-member-ridhant` | `/our-team/` | 1:1 | Portrait of Ridhant Singh (saved as `team-ridhant.jpg`) | photo sent in chat |
 | `consultant-pornpavit` | `/consultants/` | 1:1 | Portrait of Assoc. Prof. Dr. Pornpavit Sripirom | 7.Consultant/7.Consultant.docx (image inside the document) |
 | `consultant-chaiporn` | `/consultants/` | 1:1 | Portrait of Chaiporn Siramanakul, M.D. | 7.Consultant/7.Consultant.docx (image inside the document) |
 | `consultant-piyachat` | `/consultants/` | 1:1 | Portrait of Piyachat Kosalwat, M.D. | 7.Consultant/7.Consultant.docx (image inside the document) |
