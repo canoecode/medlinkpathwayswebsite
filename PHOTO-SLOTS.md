@@ -1,6 +1,6 @@
 # Photo Slots
 
-The site has **184 photo slots**: **177 hold real photos** and **7 are still placeholders**.
+The site has **185 photo slots**: **179 hold real photos** and **6 are still placeholders**.
 
 Photos live in `/assets/images/` as `.webp` files. To fill or swap a slot, see README.md, "Replacing a photo slot". Search the HTML for `data-slot="<slot-id>"` to find a slot on its page.
 
@@ -14,7 +14,6 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-member-exec-new-new` | `/our-team/` | 1:1 | portrait of Patchareerat (New New) Yangsakunshinnapak |
 | `cataract` album | `/healthcare-access/` | album | Cataract program: eye exam (3:4) and patients waiting under the tent (4:3), February 2026. Files in `/assets/images/albums/cataract/` | photos sent in chat |
 | `research-card-pulma` | `/research-innovation/` | 3:2 | Pulma render |
-| `research-card-thermography` | `/research-innovation/` | 3:2 | Thermography Study render |
 | `timeline-2027` | `/timeline/` | 4:3 | What's Next highlight |
 | `donate-promptpay-qr` | `/donate/` | 1:1 | PromptPay QR code (shown at 200px wide) — filled |
 
@@ -113,6 +112,8 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-member-jeda` | `/our-team/` | 1:1 | Portrait of Xinya Natalie (Jeda) Neui | 4.Organization/รายชื่อ/Executive team/04 Xinya Natalie Neui/Xinya Natalie Neui.jpeg |
 | `team-member-joyce` | `/our-team/` | 1:1 | Portrait of Xinyue (Joyce) Gao | 4.Organization/รายชื่อ/Executive team/03 Xinyue Gao/03 Xinyue Gao.jpeg |
 | `team-member-ridhant` | `/our-team/` | 1:1 | Portrait of Ridhant Singh (saved as `team-ridhant.jpg`) | photo sent in chat |
+| `team-member-max` | `/our-team/` | 1:1 | Portrait of Kantapat (Max) Lerthirunvibul (saved as `team-max.jpg`) | photo sent in chat |
+| `research-card-thermography` | `/research-innovation/` | 3:2 | A member with a handheld thermal camera explains the study to pregnant women in a hospital clinic (saved as `research-card-thermography.jpg`) | photo sent in chat |
 | `consultant-pornpavit` | `/consultants/` | 1:1 | Portrait of Assoc. Prof. Dr. Pornpavit Sripirom | 7.Consultant/7.Consultant.docx (image inside the document) |
 | `consultant-chaiporn` | `/consultants/` | 1:1 | Portrait of Chaiporn Siramanakul, M.D. | 7.Consultant/7.Consultant.docx (image inside the document) |
 | `consultant-piyachat` | `/consultants/` | 1:1 | Portrait of Piyachat Kosalwat, M.D. | 7.Consultant/7.Consultant.docx (image inside the document) |
