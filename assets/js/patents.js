@@ -1,4 +1,4 @@
-/* Patents page: draw each PDF page as a thumbnail (pdf.js). Each thumbnail links to the PDF. */
+/* Draw the first page of each linked PDF as a thumbnail (pdf.js): Patents and Our Impact pages. */
 (function () {
   'use strict';
   function start() {
@@ -15,9 +15,10 @@
       load(a.getAttribute('data-pdf')).then(function (pdf) {
         return pdf.getPage(parseInt(a.getAttribute('data-page'), 10));
       }).then(function (page) {
-        var base = page.getViewport({ scale: 1 });
+        var rotation = (page.rotate + (parseInt(a.getAttribute('data-rotate'), 10) || 0)) % 360;
+        var base = page.getViewport({ scale: 1, rotation: rotation });
         var scale = 420 / base.width;
-        var vp = page.getViewport({ scale: scale });
+        var vp = page.getViewport({ scale: scale, rotation: rotation });
         canvas.width = vp.width;
         canvas.height = vp.height;
         return page.render({ canvasContext: canvas.getContext('2d'), viewport: vp }).promise;

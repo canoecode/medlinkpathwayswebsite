@@ -19,10 +19,12 @@
     <link rel="icon" href="../favicon.ico" sizes="48x48">
     <link rel="icon" type="image/png" href="../assets/images/favicon-192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
-    <link rel="stylesheet" href="../assets/css/styles.css?v=20261026">
+    <link rel="stylesheet" href="../assets/css/styles.css?v=20261030">
     <script>document.documentElement.classList.add('js');</script>
     <script src="../assets/js/layout.js" defer></script>
     <script src="../assets/js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" defer></script>
+    <script src="../assets/js/patents.js" defer></script>
   </head>
   <body>
     <div id="site-header"></div>
@@ -120,37 +122,129 @@
           </div>
         </div>
       </section>
-      <section class="section section--surface" data-reveal>
+      <section class="section section--surface" id="beyond-thailand" data-reveal>
         <div class="container">
           <div class="split">
             <div class="split__text">
               <h2>Beyond Thailand</h2>
-              <p>In summer 2026, MedLink partnered with MamaCare, an NGO in Ghana, and gave financial support to people in need.</p>
-              <p>MamaCare used the funding to produce nutrition and malaria teaching materials for 10 community health workers in Biakoye District, in Ghana's Oti Region.</p>
+              <p>In 2026, MedLink partnered with MamaCare Ghana, a non-profit working for the health of mothers, newborns and children in underserved communities. Money raised by our students paid for nutrition and malaria teaching materials for 10 community health nurses and health workers in Biakoye District, in Ghana's Oti Region.</p>
+              <p>The health workers use them to teach mothers and caregivers about breastfeeding, feeding young children, hygiene and growth, and to help families spot the danger signs of malaria, get treatment early and stop mosquitoes from breeding.</p>
               <ul class="chips" role="list">
-                <li class="chip">10 health workers equipped</li>
+                <li class="chip">Partner: MamaCare Ghana</li>
                 <li class="chip">Biakoye District, Oti Region</li>
               </ul>
+              <div class="actions">
+                <a class="btn btn--secondary" href="../assets/docs/mamacare-report.pdf" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 13H8M16 17H8M16 13h-2"/></svg>Read the partnership report<span class="visually-hidden"> (PDF, opens in a new tab)</span></a>
+              </div>
             </div>
             <div class="split__media">
               <div class="album album--md" data-album data-title="MamaCare Ghana">
                 <ul class="album__grid" role="list">
-                  <li class="album__item"><button type="button" class="album__open" data-full="../assets/images/albums/ghana/01.webp" data-caption="Community health education run by MamaCare Ghana with MedLink&#x27;s support, Oti Region, May 2026" aria-label="Open photo 1 of 5: Community health education run by MamaCare Ghana with MedLink&#x27;s support, Oti Region, May 2026"><span class="album__count"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>5 photos</span><img src="../assets/images/albums/ghana/01-sm.webp" srcset="../assets/images/albums/ghana/01-sm.webp 800w, ../assets/images/albums/ghana/01.webp 1600w" sizes="(min-width: 960px) 420px, (min-width: 640px) 66vw, 100vw" alt="" width="800" height="598" loading="lazy" decoding="async"></button></li>
-                  <li class="album__item"><button type="button" class="album__open" data-full="../assets/images/albums/ghana/02.webp" data-caption="Community health education run by MamaCare Ghana with MedLink&#x27;s support, Oti Region, May 2026" aria-label="Open photo 2 of 5: Community health education run by MamaCare Ghana with MedLink&#x27;s support, Oti Region, May 2026"><img src="../assets/images/albums/ghana/02-sm.webp" srcset="../assets/images/albums/ghana/02-sm.webp 800w, ../assets/images/albums/ghana/02.webp 1600w" sizes="(min-width: 960px) 210px, (min-width: 640px) 33vw, 50vw" alt="" width="800" height="598" loading="lazy" decoding="async"></button></li>
-                  <li class="album__item"><button type="button" class="album__open" data-full="../assets/images/albums/ghana/03.webp" data-caption="Community health education run by MamaCare Ghana with MedLink&#x27;s support, Oti Region, May 2026" aria-label="Open photo 3 of 5: Community health education run by MamaCare Ghana with MedLink&#x27;s support, Oti Region, May 2026"><img src="../assets/images/albums/ghana/03-sm.webp" srcset="../assets/images/albums/ghana/03-sm.webp 800w, ../assets/images/albums/ghana/03.webp 1600w" sizes="(min-width: 960px) 210px, (min-width: 640px) 33vw, 50vw" alt="" width="800" height="598" loading="lazy" decoding="async"></button></li>
-                  <li class="album__item"><button type="button" class="album__open" data-full="../assets/images/albums/ghana/04.webp" data-caption="Community health education run by MamaCare Ghana with MedLink&#x27;s support, Oti Region, May 2026" aria-label="Open photo 4 of 5: Community health education run by MamaCare Ghana with MedLink&#x27;s support, Oti Region, May 2026"><img src="../assets/images/albums/ghana/04-sm.webp" srcset="../assets/images/albums/ghana/04-sm.webp 800w, ../assets/images/albums/ghana/04.webp 1600w" sizes="(min-width: 960px) 210px, (min-width: 640px) 33vw, 50vw" alt="" width="800" height="598" loading="lazy" decoding="async"></button></li>
-                  <li class="album__item"><button type="button" class="album__open" data-full="../assets/images/albums/ghana/05.webp" data-caption="Community health education run by MamaCare Ghana with MedLink&#x27;s support, Oti Region, May 2026" aria-label="Open photo 5 of 5: Community health education run by MamaCare Ghana with MedLink&#x27;s support, Oti Region, May 2026"><img src="../assets/images/albums/ghana/05-sm.webp" srcset="../assets/images/albums/ghana/05-sm.webp 800w, ../assets/images/albums/ghana/05.webp 1600w" sizes="(min-width: 960px) 210px, (min-width: 640px) 33vw, 50vw" alt="" width="800" height="598" loading="lazy" decoding="async"></button></li>
+                  <li class="album__item"><button type="button" class="album__open" data-full="../assets/images/albums/ghana/01.webp" data-caption="Community health education day in Biakoye District, Oti Region, May 2026" aria-label="Open photo 1 of 6: Community health education day in Biakoye District, Oti Region, May 2026"><span class="album__count"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>6 photos</span><img src="../assets/images/albums/ghana/01-sm.webp" srcset="../assets/images/albums/ghana/01-sm.webp 800w, ../assets/images/albums/ghana/01.webp 1600w" sizes="(min-width: 960px) 420px, (min-width: 640px) 66vw, 100vw" alt="" width="800" height="598" loading="lazy" decoding="async"></button></li>
+                  <li class="album__item"><button type="button" class="album__open" data-full="../assets/images/albums/ghana/02.webp" data-caption="A MamaCare health educator speaks with mothers and caregivers, May 2026" aria-label="Open photo 2 of 6: A MamaCare health educator speaks with mothers and caregivers, May 2026"><img src="../assets/images/albums/ghana/02-sm.webp" srcset="../assets/images/albums/ghana/02-sm.webp 800w, ../assets/images/albums/ghana/02.webp 1600w" sizes="(min-width: 960px) 210px, (min-width: 640px) 33vw, 50vw" alt="" width="800" height="598" loading="lazy" decoding="async"></button></li>
+                  <li class="album__item"><button type="button" class="album__open" data-full="../assets/images/albums/ghana/03.webp" data-caption="Community engagement led by trained community health nurses, May 2026" aria-label="Open photo 3 of 6: Community engagement led by trained community health nurses, May 2026"><img src="../assets/images/albums/ghana/03-sm.webp" srcset="../assets/images/albums/ghana/03-sm.webp 800w, ../assets/images/albums/ghana/03.webp 1600w" sizes="(min-width: 960px) 210px, (min-width: 640px) 33vw, 50vw" alt="" width="800" height="598" loading="lazy" decoding="async"></button></li>
+                  <li class="album__item"><button type="button" class="album__open" data-full="../assets/images/albums/ghana/04.webp" data-caption="Community health education organised by MamaCare Ghana, May 2026" aria-label="Open photo 4 of 6: Community health education organised by MamaCare Ghana, May 2026"><img src="../assets/images/albums/ghana/04-sm.webp" srcset="../assets/images/albums/ghana/04-sm.webp 800w, ../assets/images/albums/ghana/04.webp 1600w" sizes="(min-width: 960px) 210px, (min-width: 640px) 33vw, 50vw" alt="" width="800" height="598" loading="lazy" decoding="async"></button></li>
+                  <li class="album__item"><button type="button" class="album__open" data-full="../assets/images/albums/ghana/05.webp" data-caption="Families gather for the health education session, May 2026" aria-label="Open photo 5 of 6: Families gather for the health education session, May 2026"><img src="../assets/images/albums/ghana/05-sm.webp" srcset="../assets/images/albums/ghana/05-sm.webp 800w, ../assets/images/albums/ghana/05.webp 1600w" sizes="(min-width: 960px) 210px, (min-width: 640px) 33vw, 50vw" alt="" width="800" height="598" loading="lazy" decoding="async"></button></li>
+                  <li class="album__item"><button type="button" class="album__open" data-full="../assets/images/albums/ghana/06.jpg" data-caption="School children took part in the community health education, May 2026" aria-label="Open photo 6 of 6: School children took part in the community health education, May 2026"><img src="../assets/images/albums/ghana/06-sm.jpg" srcset="../assets/images/albums/ghana/06-sm.jpg 800w, ../assets/images/albums/ghana/06.jpg 1600w" sizes="(min-width: 960px) 210px, (min-width: 640px) 33vw, 50vw" alt="" width="800" height="598" loading="lazy" decoding="async"></button></li>
                 </ul>
                 <div class="album__bar">
                   <p class="album__caption">Community health education run by MamaCare Ghana with MedLink&#x27;s support, Oti Region, May 2026</p>
-                  <button type="button" class="album__all"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>See all 5 photos</button>
+                  <button type="button" class="album__all"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>See all 6 photos</button>
                 </div>
               </div>
             </div>
           </div>
+          <ul class="grid grid--stats beyond-stats" role="list">
+            <li class="stat">
+              <p class="stat__figure">10</p>
+              <p class="stat__label">community health nurses and workers equipped</p>
+            </li>
+            <li class="stat">
+              <p class="stat__figure">15</p>
+              <p class="stat__label">underserved communities in Biakoye District</p>
+            </li>
+            <li class="stat">
+              <p class="stat__figure">~7,500</p>
+              <p class="stat__label">women and newborns who benefit</p>
+            </li>
+            <li class="stat">
+              <p class="stat__figure">~6,500</p>
+              <p class="stat__label">more community members reached indirectly</p>
+            </li>
+          </ul>
+          <p class="beyond-stats__note">Figures from MamaCare Ghana's project report.</p>
         </div>
       </section>
-      <section class="section" id="in-the-news" data-reveal>
+      <section class="section" id="mamacare-project" data-reveal>
+        <div class="container">
+          <h2 class="section-title">In Their Words</h2>
+          <ul class="quote-grid" role="list">
+            <li>
+              <figure class="quote-card">
+                <blockquote class="quote-card__text">
+                  <p>These interventions from MamaCare Organization and their donor partners (Medlink Pathways, Thailand) have gone a long way in strengthening the healthcare systems in our communities, and we&#8217;re grateful.</p>
+                </blockquote>
+                <figcaption class="quote-card__person">
+                  <span class="quote-card__name">Siaw Abigail</span>
+                  <span class="quote-card__role">Health worker, Tapa Abotoase Clinic, Biakoye District</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="quote-card">
+                <blockquote class="quote-card__text">
+                  <p>It has enabled us to develop nutrition training resources for 10 health workers in Biakoye and surrounding communities, as well as support malaria control outreach. This is what humanitarianism is all about: transforming lives and communities one at a time.</p>
+                </blockquote>
+                <figcaption class="quote-card__person">
+                  <span class="quote-card__name">Emmanuel Pewudie</span>
+                  <span class="quote-card__role">Founder, MamaCare Ghana Organization</span>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          <h2 class="section-title mamacare-docs__title">Project Documents</h2>
+          <p class="section-intro">The report MamaCare sent us, the teaching materials our funding paid for, and the receipt for printing them.</p>
+          <ul class="doc-cards" role="list">
+            <li class="doc-card">
+              <a class="doc-thumb" href="../assets/docs/mamacare-report.pdf" target="_blank" rel="noopener" data-pdf="../assets/docs/mamacare-report.pdf" data-page="1" tabindex="-1" aria-hidden="true"><canvas></canvas></a>
+              <div class="doc-card__body">
+                <p class="doc-card__kicker">Report &middot; 3 pages</p>
+                <h3 class="doc-card__title">Partnership report</h3>
+                <p class="doc-card__text">MamaCare Ghana's account of the project: what was funded, who it reaches and what comes next.</p>
+                <a class="text-link" href="../assets/docs/mamacare-report.pdf" target="_blank" rel="noopener">View PDF<span class="visually-hidden">: Partnership report (opens in a new tab)</span></a>
+              </div>
+            </li>
+            <li class="doc-card">
+              <a class="doc-thumb" href="../assets/docs/mamacare-infant-young-child-feeding.pdf" target="_blank" rel="noopener" data-pdf="../assets/docs/mamacare-infant-young-child-feeding.pdf" data-page="1" data-rotate="90" tabindex="-1" aria-hidden="true"><canvas></canvas></a>
+              <div class="doc-card__body">
+                <p class="doc-card__kicker">Nutrition material</p>
+                <h3 class="doc-card__title">Infant and young child feeding</h3>
+                <p class="doc-card__text">UNICEF counselling cards on breastfeeding, first foods from six months, hygiene and feeding a sick child.</p>
+                <a class="text-link" href="../assets/docs/mamacare-infant-young-child-feeding.pdf" target="_blank" rel="noopener">View PDF<span class="visually-hidden">: Infant and young child feeding (opens in a new tab)</span></a>
+              </div>
+            </li>
+            <li class="doc-card">
+              <a class="doc-thumb" href="../assets/docs/mamacare-malaria-resource.pdf" target="_blank" rel="noopener" data-pdf="../assets/docs/mamacare-malaria-resource.pdf" data-page="1" data-rotate="90" tabindex="-1" aria-hidden="true"><canvas></canvas></a>
+              <div class="doc-card__body">
+                <p class="doc-card__kicker">Malaria material &middot; 8 pages</p>
+                <h3 class="doc-card__title">Home-based care for malaria</h3>
+                <p class="doc-card__text">Signs and danger signs, when to go to a clinic, common myths, and how to stop mosquitoes from breeding.</p>
+                <a class="text-link" href="../assets/docs/mamacare-malaria-resource.pdf" target="_blank" rel="noopener">View PDF<span class="visually-hidden">: Home-based care for malaria (opens in a new tab)</span></a>
+              </div>
+            </li>
+            <li class="doc-card">
+              <a class="doc-thumb" href="../assets/docs/mamacare-receipt.pdf" target="_blank" rel="noopener" data-pdf="../assets/docs/mamacare-receipt.pdf" data-page="1" tabindex="-1" aria-hidden="true"><canvas></canvas></a>
+              <div class="doc-card__body">
+                <p class="doc-card__kicker">Receipt &middot; September 2026</p>
+                <h3 class="doc-card__title">Official receipt</h3>
+                <p class="doc-card__text">Invoice for printing the nutrition and malaria materials, paid by MamaCare Ghana.</p>
+                <a class="text-link" href="../assets/docs/mamacare-receipt.pdf" target="_blank" rel="noopener">View PDF<span class="visually-hidden">: Official receipt (opens in a new tab)</span></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section--surface" id="in-the-news" data-reveal>
         <div class="container">
           <h2 class="section-title">In the News</h2>
           <article class="press">
@@ -167,7 +261,10 @@
                 <li>Biakoye District, Oti Region</li>
                 <li>Nutrition and malaria education</li>
               </ul>
-              <div class="press__actions"><a class="btn btn--secondary" href="https://ghanaiantimes.com.gh/mamacare-ghana-supports-health-workers-with-nutrition-training/" target="_blank" rel="noopener">Read the article<span class="visually-hidden"> (opens in a new tab)</span></a></div>
+              <div class="press__actions">
+                <a class="btn btn--secondary" href="https://ghanaiantimes.com.gh/mamacare-ghana-supports-health-workers-with-nutrition-training/" target="_blank" rel="noopener">Read the article<span class="visually-hidden"> (opens in a new tab)</span></a>
+                <a class="btn btn--tertiary" href="../assets/docs/mamacare-report.pdf" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 13H8M16 17H8M16 13h-2"/></svg>Partnership report<span class="visually-hidden"> (PDF, opens in a new tab)</span></a>
+              </div>
             </div>
           </article>
         </div>
