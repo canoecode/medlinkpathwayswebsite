@@ -1,6 +1,6 @@
 # Photo Slots
 
-The site has **185 photo slots**: **179 hold real photos** and **6 are still placeholders**.
+The site has **187 photo slots**: **179 hold real photos** and **6 are still placeholders**.
 
 Photos live in `/assets/images/` as `.webp` files. To fill or swap a slot, see README.md, "Replacing a photo slot". Search the HTML for `data-slot="<slot-id>"` to find a slot on its page.
 
@@ -47,7 +47,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-exec-kundol` | `/our-team/` | 1:1 | Portrait of Kundol Tangruthaiwanich | 4.Organization/รายชื่อ/Co Founder/ลงแล้ว/1. Kundol .docx (image inside the document) |
 | `team-exec-wanda` | `/our-team/` | 1:1 | Portrait of Weeranda (Wanda) Kiatlertpongsa | photo sent in chat (Wanda) |
 | `team-exec-prem` | `/our-team/` | 1:1 | Portrait of Akarapat (Prem) Nawatrilap | NewPeople/Akarapat (Prem) Nawatrilap.png |
-| `team-exec-kao-wan` | `/our-team/` | 1:1 | Portrait of Thitaree (Kao-Wan) Phunratanamala | 4.Organization/รายชื่อ/Executive team/18 Thitaree Phunratanamala/18 Thitaree Phunratanamala.jpg |
+| `team-exec-kao-wan` | `/our-team/` | 1:1 | Portrait of Thitaree (Kao-Wan) Phunratanamala | photo sent in chat (saved as `team-thitaree.jpg`) |
 | `team-exec-tiger` | `/our-team/` | 1:1 | Portrait of Junxi (Tiger) Liu | NewPeople/Junxi (Tiger) Liu.webp |
 | `team-exec-kira` | `/our-team/` | 1:1 | Portrait of Akira (Kira) Wongwannaraksa | 4.Organization/รายชื่อ/Executive team/02 Akira Wongwannaraksa/02 Akira Wongwannaraksa.jpeg |
 | `team-exec-saan` | `/our-team/` | 1:1 | Portrait of Siwat (Saan) Viriyayodyiem | 4.Organization/รายชื่อ/Executive team/17 Siwat Viriyayodyiem/17 Siwat Viriyayodyiem.jpeg |
@@ -74,7 +74,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-member-prach` | `/our-team/` | 1:1 | Portrait of Prach Mangkhalathanakun | 4.Organization/รายชื่อ/Co Founder/07 Prach Mangkhalathanakun/07  Prach Mangkhalathanakun.jpeg |
 | `team-member-exec-wanda` | `/our-team/` | 1:1 | Portrait of Weeranda (Wanda) Kiatlertpongsa | photo sent in chat (Wanda) |
 | `team-member-exec-prem` | `/our-team/` | 1:1 | Portrait of Akarapat (Prem) Nawatrilap | NewPeople/Akarapat (Prem) Nawatrilap.png |
-| `team-member-exec-kao-wan` | `/our-team/` | 1:1 | Portrait of Thitaree (Kao-Wan) Phunratanamala | 4.Organization/รายชื่อ/Executive team/18 Thitaree Phunratanamala/18 Thitaree Phunratanamala.jpg |
+| `team-member-exec-kao-wan` | `/our-team/` | 1:1 | Portrait of Thitaree (Kao-Wan) Phunratanamala | photo sent in chat (saved as `team-thitaree.jpg`) |
 | `team-member-exec-tiger` | `/our-team/` | 1:1 | Portrait of Junxi (Tiger) Liu | NewPeople/Junxi (Tiger) Liu.webp |
 | `team-member-exec-kira` | `/our-team/` | 1:1 | Portrait of Akira (Kira) Wongwannaraksa | 4.Organization/รายชื่อ/Executive team/02 Akira Wongwannaraksa/02 Akira Wongwannaraksa.jpeg |
 | `team-member-exec-saan` | `/our-team/` | 1:1 | Portrait of Siwat (Saan) Viriyayodyiem | 4.Organization/รายชื่อ/Executive team/17 Siwat Viriyayodyiem/17 Siwat Viriyayodyiem.jpeg |
@@ -100,7 +100,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-member-near` | `/our-team/` | 1:1 | Portrait of Kunanya (Near) Issarapinyo | 4.Organization/รายชื่อ/Executive team/15 Kunanya Issarapinyo/15 Kunanya Issarapinyo.jpeg |
 | `team-member-paulene` | `/our-team/` | 1:1 | Portrait of Paradee (Paulene) Chalothorn | NewPeople/Paradee (Paulene) Chalothorn.jpg |
 | `team-member-prin` | `/our-team/` | 1:1 | Portrait of Prin Thanatanant | NewPeople/IMG_0980 - Prin (Prin) Thanatanant.jpeg |
-| `team-member-claire` | `/our-team/` | 1:1 | Portrait of Proudnapas (Claire) Upatising | NewPeople/Proudnapas (Claire) Upatising.jpg |
+| `team-member-claire` | `/our-team/` | 1:1 | Portrait of Proudnapas (Claire) Upatising | photo sent in chat (saved as `team-claire.jpg`) |
 | `team-member-pryt` | `/our-team/` | 1:1 | Portrait of Prytdanai (Pryt) Pawa | 4.Organization/รายชื่อ/Executive team/14 Prytdanai Pawa/14 prytdanai pawa.jpeg |
 | `team-member-michael` | `/our-team/` | 1:1 | Portrait of Qinhui (Michael) Li | 4.Organization/รายชื่อ/Executive team/19 Qinhui Li/19 Qinhui Li.jpeg |
 | `team-member-sunlee` | `/our-team/` | 1:1 | Portrait of Ratchakrit (Sunlee) Sathiraboot | NewPeople/Ratchakrit (Sunlee) Sathiraboot.webp |
@@ -113,6 +113,8 @@ These slots show a gray labeled placeholder until a photo is added.
 | `team-member-joyce` | `/our-team/` | 1:1 | Portrait of Xinyue (Joyce) Gao | 4.Organization/รายชื่อ/Executive team/03 Xinyue Gao/03 Xinyue Gao.jpeg |
 | `team-member-ridhant` | `/our-team/` | 1:1 | Portrait of Ridhant Singh (saved as `team-ridhant.jpg`) | photo sent in chat |
 | `team-member-max` | `/our-team/` | 1:1 | Portrait of Kantapat (Max) Lerthirunvibul (saved as `team-max.jpg`) | photo sent in chat |
+| `team-member-tete` | `/our-team/` | 1:1 | Portrait of Passapitch (Te Te) Yangsakunshinnapak (saved as `team-tete.jpg`) | photo sent in chat |
+| `team-member-neenae` | `/our-team/` | 1:1 | Portrait of Nanaphat (Neenae) Rungnoppakunsri (saved as `team-neenae.jpg`) | photo sent in chat |
 | `research-card-thermography` | `/research-innovation/` | 3:2 | A member with a handheld thermal camera explains the study to pregnant women in a hospital clinic (saved as `research-card-thermography.jpg`) | photo sent in chat |
 | `consultant-pornpavit` | `/consultants/` | 1:1 | Portrait of Assoc. Prof. Dr. Pornpavit Sripirom | 7.Consultant/7.Consultant.docx (image inside the document) |
 | `consultant-chaiporn` | `/consultants/` | 1:1 | Portrait of Chaiporn Siramanakul, M.D. | 7.Consultant/7.Consultant.docx (image inside the document) |
