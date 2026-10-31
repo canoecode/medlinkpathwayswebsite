@@ -12,7 +12,7 @@ These slots show a gray labeled placeholder until a photo is added.
 | --- | --- | --- | --- |
 | `team-exec-new-new` | `/our-team/` | 1:1 | portrait of Patchareerat (New New) Yangsakunshinnapak |
 | `team-member-exec-new-new` | `/our-team/` | 1:1 | portrait of Patchareerat (New New) Yangsakunshinnapak |
-| `cataract` album | `/healthcare-access/` | album | Cataract program: eye exam (3:4) and patients waiting under the tent (4:3), February 2026. Files in `/assets/images/albums/cataract/` | photos sent in chat |
+| `cataract` album | `/healthcare-access/` | album | Cataract program: eye exam (3:4), patients waiting under the tent (4:3, February 2026), and eye check after surgery (3:4). Files in `/assets/images/albums/cataract/` | photos sent in chat; 03 (`.jpg`) shows a staff member checking a patient after surgery |
 | `research-card-pulma` | `/research-innovation/` | 3:2 | Pulma render |
 | `timeline-2027` | `/timeline/` | 4:3 | What's Next highlight |
 | `donate-promptpay-qr` | `/donate/` | 1:1 | PromptPay QR code (shown at 200px wide) — filled |
@@ -235,6 +235,7 @@ Partner, sponsor, and competition logos. "Placeholder" entries show a gray card 
 | `/` | Teach Tech Co., Ltd. (organization logo) | Real logo |
 | `/` | Tara Aluminium (organization logo) | Real logo |
 | `/` | Somchai Soi 5 (organization logo) | Real logo |
+| `/` | YKT, Yaowarat Krungthep (organization logo, saved as `logo-ykt.png`) | Real logo |
 | `/partners/` | Saint Joseph Mae Chaem School (organization logo) | Real logo |
 | `/partners/` | Doi Sisters (organization logo) | Real logo |
 | `/partners/` | MamaCare Ghana (organization logo) | Real logo |
