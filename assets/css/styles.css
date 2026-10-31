@@ -2025,6 +2025,11 @@ a.logo-tile:hover {
   flex-grow: 1;
 }
 
+.photo-slot--contain > img {
+  object-fit: contain;
+  background: #FAFBFC;
+}
+
 .project-card__name {
   margin: 0;
 }
