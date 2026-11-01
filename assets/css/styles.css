@@ -2030,8 +2030,33 @@ a.logo-tile:hover {
   background: #FAFBFC;
 }
 
+.project-card {
+  position: relative;
+}
+
 .project-card__name {
   margin: 0;
+}
+
+/* Whole card is clickable when the project has its own website */
+.project-card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-card__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.project-card__link:hover,
+.project-card__link:focus-visible {
+  text-decoration: underline;
+}
+
+.project-card:has(.project-card__link):hover {
+  box-shadow: 0 6px 20px var(--shadow);
 }
 
 .project-card__line {
