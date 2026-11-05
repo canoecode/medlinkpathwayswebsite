@@ -3884,6 +3884,10 @@ a.logo-tile--img:hover {
   gap: var(--space-6) var(--gutter);
 }
 
+.album-duo--next {
+  margin-top: var(--space-6);
+}
+
 .album-duo__title {
   margin: 0;
 }
