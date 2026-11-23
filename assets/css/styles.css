@@ -4812,3 +4812,111 @@ a.logo-tile--img:hover {
     padding-top: var(--space-1);
   }
 }
+
+/* --------------------------------------------------------------------------
+   Phone layout fixes (below 640px only; tablet and desktop are unchanged)
+   -------------------------------------------------------------------------- */
+@media (max-width: 639px) {
+  /* Header: a lighter Donate button so the logo has room */
+  .site-header__donate {
+    min-height: 40px;
+    padding: 8px 16px;
+    font-size: 15px;
+  }
+
+  /* "What We Do" tiles: one per row, icon beside the text */
+  .grid--tiles {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .grid--tiles .program-tile {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 4px 16px;
+  }
+
+  .grid--tiles .program-tile__icon {
+    grid-row: 1 / span 2;
+    align-self: start;
+  }
+
+  .grid--tiles .program-tile__title,
+  .grid--tiles .program-tile__line {
+    grid-column: 2;
+  }
+
+  .grid--tiles .program-tile__more {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+
+  /* Team members: two per row so long names fit */
+  .grid--6 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .member__name {
+    overflow-wrap: anywhere;
+  }
+
+  /* Fundraiser table: each row becomes a small card, no sideways scrolling */
+  .table-wrap {
+    overflow-x: visible;
+  }
+
+  .table {
+    min-width: 0;
+  }
+
+  .table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .table tbody tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 2px 16px;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .table tbody tr:last-child {
+    border-bottom: 0;
+  }
+
+  .table td {
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .table td:first-child {
+    grid-column: 1 / -1;
+    font-weight: var(--fw-semibold);
+  }
+
+  .table td:nth-child(2) {
+    color: var(--muted);
+    font-size: var(--fs-caption);
+  }
+
+  .table td:nth-child(3) {
+    text-align: right;
+    font-weight: var(--fw-semibold);
+    color: var(--deep-blue);
+  }
+
+  /* Timeline: less indent so the cards use the screen width */
+  .timeline__item {
+    padding-left: 32px;
+  }
+
+  .timeline__card {
+    padding: 20px;
+  }
+}
